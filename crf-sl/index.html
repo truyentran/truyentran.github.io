@@ -5,17 +5,7 @@
 <meta content="MSHTML 6.00.2900.5890" name="GENERATOR"></head>
 <body>
 <p align="center"><font face="Verdana" size="6"><br>Conditional Random Fields for 
-Sequential Labelling</font></p>
-<h5 align="center"><font face="Verdana" size="2"><a 
-href="http://www.computing.edu.au/~trantt2">Tran The Truyen</a> and <a 
-href="http://www.computing.edu.au/~phung/">Dinh Phung</a><br><span 
-style="FONT-WEIGHT: 400"><a href="http://impca.cs.curtin.edu.au">IMPCA</a>, <a 
-href="http://www.curtin.edu.au">Curtin University of Technology</a>, 
-Australia.</span></font></h5>
-<p align="center">+++</p>
-<p align="center"><font face="Verdana" size="2"><a 
-href="#Documentation">Documentation</a> | <a href="#Code">Code</a> | <a 
-href="#Applications">Applications</a> | <a href="#Related_Work">Related 
+Sequential Labelling</font></p><p align="center"><font face="Verdana" size="2"><a href="#Documentation">Documentation</a> | <a href="#Code">Code</a> | <a href="#Applications">Applications</a> | <a href="#Related_Work">Related 
 Work</a></font></p>
 <h4 align="left"><b><font face="Verdana">Introduction</font></b></h4>
 <p align="left"><font face="Verdana" size="2">We aim at developing CRF tools for 
@@ -24,76 +14,58 @@ sequential labelling. Models to be implemented:</font></p>
   <li>
   <p align="left"><font face="Verdana" size="2">Standard first, second-order 
   CRFs.</font> </p>
-  <li>
+  </li><li>
   <p align="left"><font face="Verdana" size="2">Semi-Markov CRFs.</font> </p>
-  <li>
+  </li><li>
   <p align="left"><font face="Verdana" size="2">Standard first, second-order 
   MEMM.</font> </p></li></ul>
-<h4><b><font face="Verdana"><a 
-name=Documentation>Documentation</a></font></b></h4>
+<h4><b><font face="Verdana"><a name="Documentation">Documentation</a></font></b></h4>
 <ul>
-  <li><font face="Verdana" size="2"><strong style="FONT-WEIGHT: 400">A Tutorial on 
-  the Maths behind&nbsp;Conditional Random Fields for Sequential Labelling, Tran 
-  The Truyen, Dinh Q. Phung, 4/2008. [<a 
-  href="http://www.computing.edu.au/%7Etrantt2/pubs/crf_intro.pdf">pdf</a>]</strong></font> 
+  <li><font face="Verdana" size="2"><strong style="font-weight: 400;">A Tutorial on 
+  the Maths behind&nbsp;Conditional Random Fields for Sequential Labelling [<a href="https://truyentran.github.io/papers/crf_intro.pdf">pdf</a>]</strong></font> 
 
-  <li><font face="Verdana" size="2">A Practitioner Guide to Conditional Random 
-  Fields for Sequential Labelling, <strong style="FONT-WEIGHT: 400">Tran The 
-  Truyen, Dinh Q. Phung, 4/2008. [<a 
-  href="http://www.computing.edu.au/%7Etrantt2/pubs/crf_prac.pdf">pdf</a>]</strong></font> 
+  </li><li><font face="Verdana" size="2">A Practitioner Guide to Conditional Random 
+  Fields for Sequential Labelling<strong style="font-weight: 400;"> [<a href="https://truyentran.github.io/papers/crf_prac.pdf">pdf</a>]</strong></font> 
   </li></ul>
 <h4><b><font face="Verdana"><a name="Code">Code</a></font></b></h4>
 <ul>
-  <li><font face="Verdana" size="2"><b><a 
-  href="crf-sl-18-01-10-Cplusplus.zip">CRF-SL/C++ version 
-  1.0.1</a>&nbsp;</b>&nbsp;(18/1/2010). </font><b><font face="Verdana" 
-  size=-1>Main features:</font></b>
+  <li><font face="Verdana" size="2"><b><a href="crf-sl-18-01-10-Cplusplus.zip">CRF-SL/C++ version 
+  1.0.1</a>&nbsp;</b>&nbsp;(18/1/2010). </font><b><font face="Verdana" size="-1">Main features:</font></b>
   <ul>
     <li><font face="Verdana" size="-1">A light weight, generic C++ implementation. 
     Domain independent.</font> 
-    <li><font face="Verdana" size="-1">First &amp; second-order sequential 
+    </li><li><font face="Verdana" size="-1">First &amp; second-order sequential 
     CRFs.</font> 
-    <li><font face="Verdana" size="-1">Training algorithms: L-BFGS (from Taku Kudo), 
+    </li><li><font face="Verdana" size="-1">Training algorithms: L-BFGS (from Taku Kudo), 
     stochastic gradient ascent and Collin's voted perceptron.</font> 
-    <li><font face="Verdana" size="-1">Handle missing training labels.</font> 
-    <li><font face="Verdana" size="-1">Decoding: Viterbi (forward/backward) and 
+    </li><li><font face="Verdana" size="-1">Handle missing training labels.</font> 
+    </li><li><font face="Verdana" size="-1">Decoding: Viterbi (forward/backward) and 
     Pearl's max-product.</font> 
-    <li><font face="Verdana" size="-1">Report label-wise and segment-wise 
+    </li><li><font face="Verdana" size="-1">Report label-wise and segment-wise 
     statistics.</font> </li></ul></li></ul>
 <h4><font face="Verdana"><a name="Applications">Applications</a></font></h4>
 <ul>
   <li><font face="Verdana" size="2"><b>English noun-phrase chunking</b>: 
-  pre-computed <a href="conll2000-data.zip">data features</a> for the <a 
-  href="http://www.cnts.ua.ac.be/conll2000/chunking/">CoNLL-2000 shared 
+  pre-computed <a href="conll2000-data.zip">data features</a> for the <a href="http://www.cnts.ua.ac.be/conll2000/chunking/">CoNLL-2000 shared 
   task</a>.</font> </li></ul>
 <h4><font face="Verdana"><a name="Related_Work">Related Work</a></font></h4>
 <ul>
-  <li><font face="Verdana" size="2"><a 
-  href="http://flexcrfs.sourceforge.net/">FlexCRF</a> package written in C/C++ 
-  by </font><font size="2"><span style="FONT-FAMILY: Verdana">Xuan-Hieu Phan, 
-  Le-Minh Nguyen and Cam-Tu Nguyen</span></font><font face="Verdana" 
-  size=2>.</font> 
-  <li><font face="Verdana" size="2">A <a class="l" 
-  onmousedown="return rwt(this,'','','res','1','AFQjCNEaPc0AvivE4tjBKs5_-IjfhXLsSQ','&amp;sig2=4a1MdD8hlWJURtU7-GtSOg')" 
-  href="http://www.cs.ubc.ca/~murphyk/Software/CRF/crf.html">Toolbox</a> written 
-  in Matlab/C by <a href="http://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a>. 
+  <li><font face="Verdana" size="2"><a href="http://flexcrfs.sourceforge.net/">FlexCRF</a> package written in C/C++ 
+  by </font><font size="2"><span style="font-family: Verdana;">Xuan-Hieu Phan, 
+  Le-Minh Nguyen and Cam-Tu Nguyen</span></font><font face="Verdana" size="2">.</font> 
+  </li><li><font face="Verdana" size="2">A <a class="l" onmousedown="return rwt(this,'','','res','1','AFQjCNEaPc0AvivE4tjBKs5_-IjfhXLsSQ','&sig2=4a1MdD8hlWJURtU7-GtSOg')" href="http://www.cs.ubc.ca/%7Emurphyk/Software/CRF/crf.html">Toolbox</a> written 
+  in Matlab/C by <a href="http://www.cs.ubc.ca/%7Emurphyk/">Kevin Murphy</a>. 
   Supports generic CRFs (not limited to sequential structures).</font> 
-  <li><font face="Verdana" size="2"><a class="l" 
-  onmousedown="return rwt(this,'','','res','8','AFQjCNEVvu6Ic8YpprV_fudvvqFwOyJfkw','&amp;sig2=oW9v5Ty_ulesRG7XibfvtQ')" 
-  href="http://crfpp.sourceforge.net/">CRF++ a toolkit </a>, written in C/C++ by 
-  <a href="http://www.chasen.org/~taku/">Taku Kudo</a>.</font> 
-  <li><font face="Verdana" size="2">A <a href="http://crf.sourceforge.net/">CRF</a> 
-  package written in Java by <a href="http://www.it.iitb.ac.in/~sunita">Sunita 
+  </li><li><font face="Verdana" size="2"><a class="l" onmousedown="return rwt(this,'','','res','8','AFQjCNEVvu6Ic8YpprV_fudvvqFwOyJfkw','&sig2=oW9v5Ty_ulesRG7XibfvtQ')" href="http://crfpp.sourceforge.net/">CRF++ a toolkit </a>, written in C/C++ by 
+  <a href="http://www.chasen.org/%7Etaku/">Taku Kudo</a>.</font> 
+  </li><li><font face="Verdana" size="2">A <a href="http://crf.sourceforge.net/">CRF</a> 
+  package written in Java by <a href="http://www.it.iitb.ac.in/%7Esunita">Sunita 
   Sarawagi</a>. Supports standard CRFs and Semi-Markov CRFs.</font> 
-  <li><font face="Verdana" size="2"><a 
-  href="http://mallet.cs.umass.edu/index.php/Main_Page">MALLET</a> package 
-  written in Java, a development lead by <a 
-  href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a>. This is a 
+  </li><li><font face="Verdana" size="2"><a href="http://mallet.cs.umass.edu/index.php/Main_Page">MALLET</a> package 
+  written in Java, a development lead by <a href="http://www.cs.umass.edu/%7Emccallum/">Andrew McCallum</a>. This is a 
   generic machine learning tool for textual data.</font> 
-  <li><font face="Verdana" size="2"><font color="#a40526"><a 
-  href="http://nlp.stanford.edu/software/CRF-NER.shtml">Stanford Named Entity 
-  Recognizer</a> </font>with CRF written in Java by <a 
-  href="http://www.stanford.edu/~jrfinkel/">Jenny Finkel</a>.</font> </li></ul>
+  </li><li><font face="Verdana" size="2"><font color="#a40526"><a href="http://nlp.stanford.edu/software/CRF-NER.shtml">Stanford Named Entity 
+  Recognizer</a> </font>with CRF written in Java by <a href="http://www.stanford.edu/%7Ejrfinkel/">Jenny Finkel</a>.</font> </li></ul>
 <p><i><font face="Verdana" size="2">Last Update: 18/1/2010</font></i></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
