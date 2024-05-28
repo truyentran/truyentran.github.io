@@ -73,7 +73,60 @@ font-size: 12px;
 <p><font style="font-weight: bold; color: rgb(0, 102, 0);" size="5"><font size="+3">Theory-informed Machine Learning</font> </font><a name="medical"></a></p>
 <p style="color: black;"><font size="5">Data-efficient machine learning that respects theory and does not hallucinate.<br>
 </font></p>
-<p style="color: black;"><font size="5"><span style="font-weight: bold;">Areas</span>:</font></p>
+<p style="color: black;"><font size="5"><span style="font-weight: bold;">Overview</span>:</font></p><p style="color: black;"><big>Current
+leading data-driven learning systems such as ChatGPT, Gemini, and Sora
+often hallucinate non-existent, sometimes dangerous artifacts and
+generate scientifically implausible outcomes when applied to realistic
+science and engineering settings. Lacking built-in mechanisms to
+understand real-world phenomena, they fail to generalize beyond their
+trained ranges. In contrast, theory-driven models respect the
+underlying laws and extrapolate well but may suffer from being
+simplistic, incomplete, and prohibitively expensive to solve, thus
+unable to accurately represent the dynamics and complexity of the real
+world. For example, a detailed theory-driven model of weather would
+fail to compute forecasts in real-time due to the sheer complexity of
+modeling the atmosphere, ocean, land, and the interactions among them.
+Theory-informed Machine Learning (TiML) integrates the strengths of
+both approaches, showing great promise for providing trustworthy
+insights to help solve pressing global and local problems like
+infectious diseases, energy security, and climate change.</big></p><p style="color: black;"><big>We
+have pioneered the development of TiML to solve diverse real-world
+problems. For example, our ontology-induced model of medical risk
+discovered risk factors that were more certain and consistent with
+established medicine than those found by purely data-driven methods.
+Our epidemiology-guided neural network model of COVID-19 dynamics had
+both its design and parameters informed by theory and past outbreaks.
+This approach greatly outperformed standard data-driven machine
+learning and mechanistic models, helping Ho Chi Minh City, home to over
+10 million people, make critical decisions to mitigate a devastating
+late 2021 COVID crisis that took over 20,000 lives. Likewise, our
+physics-informed graph neural network integrates the external potential
+term found in density functional theory calculations to predict the
+potential energy surface in materials science applications. Our model
+is more accurate in predicting the total energy per atom of a defective
+system, as well as the structural changes that result from the presence
+of a defect in a material. Another TiML work of ours develops a crystal
+generative model that exploits the symmetry of crystal groups and
+incorporates an expert-guided reward function. This results in much
+faster and more stable crystal generation compared to competing
+data-driven methods that do not respect these theoretical priors.</big></p><p style="color: black;"><big>However,
+TiML tends to be instance-specific and demands extensive domain and ML
+expertise to implement in practice. Despite ultimate success, our
+experience with COVID-19 modeling shows that TiML models are very hard
+to train, have an extremely complex loss landscape, suffer from
+instability, and require major efforts in data conditioning and
+hyperparameter tuning. To realize the global potential for TiML to
+problem-solve across diverse real-world instances and domains, key
+obstacles around model expressiveness and adaptability must be overcome.</big></p><p style="color: black;"><big><span style="font-weight: bold;">Aims</span>:
+Our goal is to develop more generally applicable and trustworthy TiML
+models. This project addresses critical gaps in current TiML, which
+struggles to adapt, capture complexity, and generalize across diverse
+problem instances, spatiotemporal domains, and datasets. We will create
+new TiML algorithms and neural architectures that are:<br></big></p><ul><li><big><span style="font-style: italic;">Well-validated</span>:
+comprehensive benchmarking across diverse domains including, but not
+limited to, infectious diseases, road traffic, reaction-diffusion,
+materials science, and energy storage;</big></li><li><big><span style="font-style: italic;">Expressive</span>: able to represent a wide range of problems and theoretical priors, including those hidden in scientific literature;</big></li><li><big><span style="font-style: italic;">Adaptive</span>: enabling rapid adaptation to new problems with minimal expertise, data, compute, and effort; and</big></li><li><big><span style="font-style: italic;">Realistic</span>: effectively capturing interacting, multi-scale, multi-physics processes.</big></li></ul>
+<big><span style="font-weight: bold;"></span></big><p style="color: black;"><font size="5"><span style="font-weight: bold;">Areas</span>:</font></p>
 <ul>
         <li><big><span style="font-weight: bold;">Scientific Large Language Models</span></big></li><li><big><span style="font-weight: bold;">Benchmarking</span></big></li><li><big><span style="font-weight: bold;">Representing theoretical prior</span></big></li><li><big><span style="font-weight: bold;">Multi-process learning</span></big></li><li><big><span style="font-weight: bold;">Rapid adaptation</span></big></li><li><big><span style="font-weight: bold;">Promptable structure generation</span></big></li><li><big><span style="font-weight: bold;">Knowledge graphs<br></span></big></li></ul><p align="justify"><font size="5"><span style="font-weight: bold;">Talks/Tutorials<br>
       </span></font>
@@ -123,7 +176,7 @@ Vietnam, Jan 2019. </big></li></ul><p style="font-weight: bold;" align="justify"
       <ul><li><big><a href="https://arxiv.org/abs/2402.10931">Enabling discovery of
 materials through enhanced generalisability of deep learning models</a>, </big><big>Tawfik, Sherif Abdulkader, Tri Minh Nguyen, Salvy P. Russo, Truyen
 Tran, Sunil Gupta, and Svetha Venkatesh.&nbsp;<span style="font-style: italic;">
-arXiv preprint</span> <span style="font-style: italic;">arXiv:2402.10931</span>.</big></li></ul><p align="justify"><font style="font-weight: bold;" size="5">Benchmarking</font><font size="5"><a name="Publications"></a></font></p>
+arXiv preprint</span> <span style="font-style: italic;">arXiv:2402.10931</span>.</big></li></ul><p align="justify"><font style="font-weight: bold;" size="5">Benchmarking</font><font size="5"><a name="Publications"></a></font></p><p align="justify"><font style="font-weight: bold;" size="5">Policy reports</font><font size="5"><a name="Publications"></a></font></p><ul><li><big><a href="https://truyentran.github.io/talks/T4C.HCM-COVID-19.Report.Aug15-EN.pdf">Analysis and forecasting of COVID-19 in Ho Chi Minh city</a>. </big><big>Tran, T., Tran, Q., &amp; Tech4Covid Group. </big><big><span style="font-style: italic;">Report to HCM City Council &amp; COVID Response Task Force</span>, 13/08/2021. <br></big></li></ul>
 
 
 
@@ -178,8 +231,7 @@ Boltzmann machines for document modeling</span></a>, Tu Dinh
 Nguyen, <span style="font-weight: bold;">Truyen Tran</span>,
 Dinh
 Phung, and Svetha Venkatesh, <span style="font-style: italic;">Information
-Sciences</span><span style="font-style: italic;">.
-doi:10.1016/j.ins.2015.08.023.</span> </big></li><li><big> <a href="https://truyentran.github.io/papers/icml13_camera_ready.pdf">Thurstonian
+Sciences</span>, 2016<span style="font-style: italic;">.</span> </big></li><li><big> <a href="https://truyentran.github.io/papers/icml13_camera_ready.pdf">Thurstonian
 Boltzmann machines: Learning from multiple inequalities</a>, <span style="font-weight: bold;">Truyen Tran</span>,
 Dinh
 Phung, and Svetha Venkatesh, In <span style="font-style: italic;">Proc.
