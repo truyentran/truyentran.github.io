@@ -12,7 +12,7 @@ font-size: 12px;
 }
 </style></head>
 <body>
-<table style="border-collapse: collapse; width: 1038px; height: 530px;" id="1" border="0" bordercolor="#111111" cellpadding="3" cellspacing="0">
+<table style="border-collapse: collapse; width: 1000px; height: 530px;" id="1" border="0" bordercolor="#111111" cellpadding="3" cellspacing="0">
 <tbody>
 <tr>
 <td rowspan="7" v="" style="border-width: 1px; border-right: 1px solid; vertical-align: top; background-color: rgb(241, 242, 241);">
@@ -60,10 +60,10 @@ scientifically</big></li>
 <td style="vertical-align: top;"><big>&nbsp;<span style="font-weight: bold;">Areas</span><br>
 </big>
 <ul>
-<li><big>AI Scientists: Agents that think
+<li><big><a href="#AI_Scientists">AI Scientists</a>: Agents that think
 science</big></li>
-<li><big>Physical sciences: Matters and energy</big></li>
-<li><big>Life sciences: Biology and drug
+<li><big><a href="#Physical_Sciences">Physical sciences</a>: Matters and energy</big></li>
+<li><big><a href="#Life_Sciences">Life sciences</a>: Biology and drug
 discovery</big></li>
 </ul>
 </td>
@@ -95,7 +95,7 @@ machine
 learning</a><br>
 </span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="#Foundation_Models_for_science">Foundation Models for
 science</a><br>
-</span></big><big>&nbsp;»&nbsp;<a href="#Crystal_structure_generation"><span style="text-decoration: underline;">Crystal structure
+</span></big><big>&nbsp;» <a href="#Crystal_structure_generation"><span style="text-decoration: underline;">Goal-driven crystal structure
 generation</span></a></big><br>
 </td>
 <td style="vertical-align: top;"><big><span style="text-decoration: underline;"></span></big><big><span style="font-weight: bold;"></span></big><big>»
@@ -104,15 +104,14 @@ GNNs for materials</a><br>
 </span></big><big>» <span style="text-decoration: underline;"><a href="#Designing_MOF_for_CO2_capturing">Designing MOF for
 CO2
 capturing</a><br>
-</span></big><big>» <span style="text-decoration: underline;"><a href="#Multi-agents_for_materials_discovery">Multi-agents
+</span></big><big>» <span style="text-decoration: underline;"><a href="https://genai4materials.github.io/">Generative AI
 for
 materials discovery</a><br>
 </span></big><big>» <span style="text-decoration: underline;"><a href="#Modelling_crystals_plasticity">Modelling crystals
 plasticity</a><br>
-</span></big><big>» <span style="text-decoration: underline;"><a href="#Drug-target_affinity_prediction">Drug-target affinity
+</span></big><big>» <span style="text-decoration: underline;"><a href="#Drug-target_affinity_prediction">Drug-protein binding
 prediction</a><br>
-</span></big><big>» <a href="#Exploring_the_phase-space_of_alloys"><span style="text-decoration: underline;">Exploring the
-phase-space of alloys</span></a></big><br>
+</span></big><big>» <a href="#Exploring_the_phase-space_of_alloys"><span style="text-decoration: underline;">Deep hybrid&nbsp;model for inverse design</span></a></big><br>
 </td>
 </tr>
 </tbody>
@@ -126,7 +125,7 @@ phase-space of alloys</span></a></big><br>
 </tr>
 <tr>
 <td></td>
-<td><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);">AI
+<td><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"><a name="AI_Scientists"></a>AI
 Scientists</span><br>
 </big></big><br>
 <big>AI agents that imagine, think, plan, execute, and
@@ -139,7 +138,7 @@ choices and explain the science. They are capable of communicating
 naturally with humans. <br>
 <br>
 <font style="font-weight: bold;" size="+1"><a href="#AI_Scientists_pubs">Publications</a><br>
-</font></big><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"><br>
+</font></big><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"><br><a name="Physical_Sciences"></a>
 Physical Sciences</span></big></big><br>
 <big><br>
 </big><big>The goal is to understand God's plan for
@@ -157,7 +156,7 @@ change, and sustainability.</big><br>
 <big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"><br>
 </span></big></big><big><font style="font-weight: bold;" size="+1"><a href="#Physical_Sciences_pubs">Publications</a><br>
 </font></big><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"><br>
-</span></big></big><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);">Life Sciences</span></big></big><br>
+</span></big></big><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"><a name="Life_Sciences"></a>Life Sciences</span></big></big><br>
 <big><br>
 </big><big>The goal is to understand God's plan for
 living things. </big><big><span style="font-weight: normal;">We want to unlock
@@ -181,21 +180,48 @@ the finding of new drugs for new targets.<br>
 <p align="justify"><font size="5"><span style="font-weight: bold;"></span></font><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big></p>
 <p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Multi-target_molecular_property"></a>
 Multi-target molecular property prediction</span></big></big></p>
-<p align="justify"><big>[TBA]</big></p><p align="justify"></p><hr style="width: 100%; height: 2px;">
+<p align="justify"><big>Molecules have multiple properties of interest,
+often all of them must be satisfactory to be useful in practice. This
+project develops new scalable and explainable techniques based on Graph
+Neural Networks to predict hundred properties at once, leveraging the
+strong correlation between them. The models are also capable of
+zero-shot learning, that is, a new property with only descriptions.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 388px;" alt="Attention visualization on substructures of a molecule with PubChem SID of 491286." src="figs/PubChem-SID-491286.png"></big></p><p style="text-align: center;"><big><span style="font-style: italic;">Substructures of a molecule corresponding to 8 prediction targets (PubChem SID: 491286)</span></big></p><hr style="width: 100%; height: 2px;">
 <p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Prediction_of_chemical-chemical"></a>Prediction
 of chemical-chemical interaction</span></big></big></p>
-<p align="justify"><big>[TBA]</big></p><p align="justify"></p><hr style="width: 100%; height: 2px;">
+<p align="justify"><big>Chemicals are rarely used in isolation but
+surrounded by other chemicals. This project builds flexible models that
+allow prediction of interaction between any subset of chemicals.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 331px;" alt="Relational Dynamic Memory Networks" src="figs/graphs-interaction.png"></big></p><p style="text-align: center;"><big><span style="font-style: italic;">Flexible
+multiple molecules interaction modelling, aiming at answering multiple
+queries about the molecular system. The underlying model is Relational
+Dynamic Memory Networks</span>.</big></p><p align="justify"></p><hr style="width: 100%; height: 2px;">
 <p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Chemical_reaction_interaction"></a>Chemical
 reaction prediction</span></big></big></p>
-<p align="justify"><big>[TBA]</big><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);">
+<p align="justify"><big>Predicting chemical reactions is central to
+chemistry. We reframe the problem as graph morphism -- &nbsp;a
+collection of &nbsp;reactants and catalysts &nbsp;form a supra-graph
+with temporarily distjoint sub-graphs. Reactions are viewed as
+sequential decision problem, where each bond change is an action.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 190px;" alt="Relational Dynamic Memory Networks" src="figs/reaction.png"></big></p><p style="text-align: center;"><big><span style="font-style: italic;">Reaction represented as a set of graph transformations from reactants (leftmost) to<br>products (rightmost)</span>.</big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);">
 <br>
 <a name="Foundation_Models_for_science"></a>Foundation
 Models for science</span></big></big></p>
-<p align="justify"><big>[TBA]</big><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);">
+<p align="justify"><big>The scientific enterprise has generated massive
+empirical data from simulations and experimental studies. Much of the
+knowledge is documented in the scientific literature, in the form of
+textual description, mathematical equations, diagrams and tables. All
+of these knowledge sources can be intergated into an associative memory
+to be retrieved later in the form of Foundation Models (FMs). Thi
+research program aims at leveraging recent advances in Large Language
+Models (LLMs) to build scientific FMs, which will later be used by AI
+Scientist agents in scientific workflows.</big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);">
 <br>
-<a name="Crystal_structure_generation"></a>Crystal
+<a name="Crystal_structure_generation"></a>Goal-driven crystal
 structure generation<br>
-</span></big></big><big><br></big><big>[TBA]</big><big>&nbsp;</big></p><hr style="width: 100%; height: 2px;">
+</span></big></big><big><br></big><big>Designing crytals is difficult
+as it requires either deep knowledge of the materials, exploration of a
+massive combinatorial space, or both. This project aims at developing
+methods for rapid exploration of the crystal space towards a given
+goal, and at the same time, satisfying as many requirements from domain
+knowledge as possible.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 180px;" alt="Relational Dynamic Memory Networks" src="figs/generated-crystals.png"></big></p><p style="text-align: center;"><big><span style="font-style: italic;">The examples of DFT-verified stable structures (E<sub>hull</sub> = 0 eV/atom)</span>.</big></p><hr style="width: 100%; height: 2px;">
 <p align="justify"><br>
 <big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Physics-informed_GNNs_for_materials"></a>Physics-informed
 GNNs for materials<br>
@@ -207,27 +233,28 @@ MOF for CO2 capturing<br>
 <br>
 </span></big></big><big>[TBA]</big><big>&nbsp;</big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big>
 </big><br>
-<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Multi-agents_for_materials_discovery"></a>Multi-agents
-for materials discovery<br>
-<br>
-</span></big></big><big>[TBA]</big><br></p><hr style="width: 100%; height: 2px;"><p align="justify"><big>
-</big><br>
 <big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Modelling_crystals_plasticity"></a>Modelling
 crystals plasticity<br>
 <br>
 </span></big></big><big>[TBA]</big><big>&nbsp;</big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big>
 </big><br>
-<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Drug-target_affinity_prediction"></a>Drug-target
-affinity prediction<br>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Drug-target_affinity_prediction"></a>Drug-protein binding
+prediction<br>
 <br>
-</span></big></big><big>[TBA]</big><big>&nbsp;</big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big>
+</span></big></big><big>This project aims at inventing new
+data-efficient AI models to precisely predict the location and strength
+of the binding between a drug and a target protein. It involves
+learning to represent 3D drug molecules and 2D/3D proteins, modelling
+the binding site, transferring from related tasks and explaination of
+the prediction.&nbsp;</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 376px;" alt="Attention values at predicted binding sites of MST1 target" src="figs/MST1-target-binding-sites.png"></big></p><p style="text-align: center;"><big><span style="font-style: italic;">Attention values at predicted binding sites of MST1 target</span>.</big></p><hr style="width: 100%; height: 2px;"><p align="justify"><big>
 </big><br>
-<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Exploring_the_phase-space_of_alloys"></a>Exploring
-the phase-space of alloys<br>
-<br>
-</span></big></big><big>[TBA]</big><big>&nbsp;<br>
-</big><br>
-<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big></p>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Exploring_the_phase-space_of_alloys"></a>Deep hybrid generative-discriminative model for inverse design</span></big></big></p><p align="justify"><big>This project aims at developing general data-driven techniques for&nbsp;</big><big>predicting the design parameters for any target in a single step.&nbsp;</big><big>This
+poses two technical challenges: the first caused due to one-to-many
+mapping when learning the inverse problem and the second caused due to
+an user specifying the target specifications only partially. To
+overcome the challenges, we formulate this problem as conditional
+density estimation under high-dimensional setting with incomplete input
+and multimodal output. </big></p><table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="vertical-align: top;"><big></big><div style="text-align: center;"><big><img style="width: 250px; height: 145px;" alt="Attention values at predicted binding sites of MST1 target" src="figs/inverse-design.png"></big><br></div><big><span style="font-style: italic;">CVAE-MDN, where <span style="font-weight: bold;">x</span>: input design, <span style="font-weight: bold;">v</span>: specified target component, <span style="font-weight: bold;">h</span>: unspecified part, and <span style="font-weight: bold;">z</span>: latent variable. </span></big><br><big><span style="font-style: italic;"><br>Left: </span></big><big><span style="font-style: italic;">Search speed comparison of the proposed CVAE-MDN with other search techniques.</span></big></td><td><div style="text-align: center;"><big><img style="width: 400px; height: 299px;" alt="Attention values at predicted binding sites of MST1 target" src="figs/alloy-search.png"></big></div></td></tr></tbody></table>
 <hr style="width: 100%; height: 2px;">
 <p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big><font style="font-weight: bold;" size="5"><a name="Grants"></a>Grants<br></font></p><ul><li><big>Studying
 and developing advanced machine learning based models for extracting
