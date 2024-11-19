@@ -1,0 +1,558 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>AI4Science Projects | Prof Truyen Tran</title>
+
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abel">
+<style>
+body {
+font-family: 'Abel', serif;
+font-size: 12px;
+}
+</style></head>
+<body>
+<table style="border-collapse: collapse; width: 1000px; height: 530px;" id="1" border="0" bordercolor="#111111" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td rowspan="7" v="" style="border-width: 1px; border-right: 1px solid; vertical-align: top; background-color: rgb(241, 242, 241);">
+<p align="right"><img style="border: 2px solid ; width: 200px; height: 178px;" alt="transparent ML" src="figs/Hydrogen_Density_Plots.png" hspace="0"><br>
+(Source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hydrogen_Density_Plots.png/1200px-Hydrogen_Density_Plots.png">wikipedia.com</a>)</p>
+<p align="right">
+</p>
+<p align="right">
+</p>
+<p align="right">
+</p>
+<p align="right"><big><a href="../index.html">Home</a><br>
+<a href="index.html">AI4Science page</a></big>
+<br>
+<font size="5"><br>
+</font><font size="5"><a href="index.html"><br>
+</a></font>&nbsp; </p>
+<br>
+<br>
+<p align="justify">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 2px;"></td>
+<td style="background-color: rgb(214, 223, 232);">
+<p><font style="font-weight: bold; color: rgb(0, 102, 0);" size="5"><font size="+3">&nbsp;AI4Science Projects</font></font></p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td style="background-color: rgb(222, 236, 244);"><big><span style="font-weight: bold;">&nbsp;Projects</span></big>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 50%; vertical-align: top;"><big><span style="font-weight: bold;"></span></big><big>&nbsp;»
+<span style="text-decoration: underline;"><a href="#Multi-target_molecular_property">Multi-target
+molecular property prediction</a><br>
+</span></big><big><span style="font-weight: bold;"></span></big><big>&nbsp;»
+<span style="text-decoration: underline;"><a href="#Prediction_of_chemical-chemical">Prediction of
+chemical-chemical interaction</a><br>
+</span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="#Chemical_reaction_interaction">Chemical reaction
+prediction</a><br>
+</span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="https://theoryinformed-ml.github.io/">Theory-informed
+machine
+learning</a><br>
+</span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="#Foundation_Models_for_science">Foundation Models for
+science</a><br>
+</span></big><big>&nbsp;» <a href="#Crystal_structure_generation"><span style="text-decoration: underline;">Goal-driven crystal
+structure
+generation</span></a></big><br>
+</td>
+<td style="vertical-align: top;"><big><span style="text-decoration: underline;"></span></big><big><span style="font-weight: bold;"></span></big><big>»
+<span style="text-decoration: underline;"><a href="#Physics-informed_GNNs_for_materials">Physics-informed
+GNNs for materials</a><br>
+</span></big><big>» <span style="text-decoration: underline;"><a href="#Designing_MOF_for_CO2_capturing">Designing MOF for
+CO2
+capturing</a><br>
+</span></big><big>» <span style="text-decoration: underline;"><a href="https://genai4materials.github.io/">Generative AI
+for
+materials discovery</a><br>
+</span></big><big>» <span style="text-decoration: underline;"><a href="#Modelling_crystals_plasticity">Modelling crystals
+plasticity</a><br>
+</span></big><big>» <span style="text-decoration: underline;"><a href="#Drug-target_affinity_prediction">Drug-protein binding
+prediction</a><br>
+</span></big><big>» <a href="#Exploring_the_phase-space_of_alloys"><span style="text-decoration: underline;">Deep
+hybrid&nbsp;model for inverse design</span></a></big><br>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"></span></big></big>
+<ul>
+</ul>
+<hr style="height: 1px; width: 100%;" noshade="noshade"></td>
+</tr>
+<tr>
+<td width="24">
+<p></p>
+<p>&nbsp;</p>
+<p></p>
+</td>
+<td style="width: 837px; vertical-align: top;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Multi-target_molecular_property"></a>
+Multi-target molecular property prediction</span></big></big></p>
+<p align="justify"><big>Molecules have multiple properties of interest,
+and often all of them must be satisfactory for practical use in
+applications like drug discovery and materials design. This project
+develops new scalable and explainable techniques based on Graph Neural
+Networks to predict hundreds of properties simultaneously, leveraging
+the strong correlations between them. By encoding molecular structures
+as graphs and utilizing advanced attention mechanisms, our models
+capture complex structure-property relationships across diverse
+chemical spaces. The framework achieves state-of-the-art accuracy while
+providing interpretable insights into property predictions. Notably,
+the models are capable of zero-shot learning, enabling prediction of
+new properties using only their textual descriptions, thus reducing the
+need for extensive experimental data.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 388px;" alt="Attention visualization on substructures of a molecule with PubChem SID of 491286." src="figs/PubChem-SID-491286.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Substructures of a molecule
+corresponding to 8 prediction targets (PubChem SID: 491286)</span></big></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Prediction_of_chemical-chemical"></a>Prediction
+of chemical-chemical interaction</span></big></big></p>
+<p align="justify"><big>Chemicals are rarely used in isolation but are
+typically surrounded by other chemicals in solutions, mixtures, and
+reactions. This project builds flexible machine learning models that
+predict interactions between any subset of chemicals in complex
+environments. By leveraging graph neural networks, attention mechanisms
+and neural computers, our approach captures both pairwise and
+higher-order interactions between molecular species. The framework can
+accounts for any contexts like concentration effects, pH conditions,
+and environmental factors that influence chemical behavior. This
+enables accurate prediction of properties like solubility, reactivity,
+and stability in multi-component systems, crucial for applications in
+drug development, materials synthesis, and chemical process
+optimization.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 331px;" alt="Relational Dynamic Memory Networks" src="figs/graphs-interaction.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Flexible
+multiple molecules interaction modelling, aiming at answering multiple
+queries about the molecular system. The underlying model is Relational
+Dynamic Memory Networks</span>.</big></p>
+<p align="justify"></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Chemical_reaction_interaction"></a>Chemical
+reaction prediction</span></big></big></p>
+<p align="justify"><big>Predicting chemical reactions is central to
+chemistry, impacting fields from drug synthesis to materials
+processing. In this project we reframe the reaction prediction problem
+as graph morphism, where a collection of reactants and catalysts form a
+supra-graph with temporarily disjoint sub-graphs. Reactions are viewed
+as a sequential decision problem, where each bond change is an action
+in the reaction pathway. Using reinforcement learning and graph neural
+networks, our model learns to predict likely reaction mechanisms by
+sequentially modifying molecular bonds, considering aspects such as
+electronic effects, steric hindrance, and thermodynamic feasibility.
+This approach enables prediction of complex reaction pathways, yields,
+and side products while providing mechanistic insights into chemical
+transformations.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 190px;" alt="Relational Dynamic Memory Networks" src="figs/reaction.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Reaction represented as a set of
+graph transformations from reactants (leftmost) to<br>
+products (rightmost)</span>.</big></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><br>
+<a name="Foundation_Models_for_science"></a>Foundation
+Models for science</span></big></big></p>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="width: 55%; text-align: justify; vertical-align: top;"><big>The scientific
+enterprise has generated massive
+empirical data from simulations and experimental studies. Much of the
+knowledge is documented in the scientific literature, in the form of
+textual description, mathematical equations, diagrams and tables. All
+of these knowledge sources can be intergated into an associative memory
+to be retrieved later in the form of Foundation Models (FMs). Thi
+research program aims at leveraging recent advances in Large Language
+Models (LLMs) to build scientific FMs, which will later be used by AI
+Scientist agents in scientific workflows.<br><br><span style="font-style: italic;">Left: DALL·E 3 illustration of Foundation Models</span>, <span style="font-style: italic;">compressing all scientific knowledge into its parameters</span>.</big></td><td style="width: 20px;">&nbsp; &nbsp; &nbsp;</td><td style="text-align: right;"><img style="width: 300px; height: 300px;" alt="Foundation Models for science" src="figs/FoundationModels-Dall-E.png"></td></tr></tbody></table><p align="justify"><big></big></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><br>
+<a name="Crystal_structure_generation"></a>Goal-driven
+crystal
+structure generation<br>
+</span></big></big><big><br>
+</big><big>Designing crystals is difficult as it requires&nbsp;deep
+knowledge of materials science and exploration of a massive
+combinatorial space. This project develops AI-driven methods for rapid
+exploration of the crystal space towards targeted properties while
+satisfying domain-specific constraints. Our approach combines
+generative models with physics-informed neural networks to navigate the
+vast space of possible crystal structures, considering atomic
+composition, symmetry groups, and lattice parameters. The framework
+incorporates materials science principles like electronegativity rules,
+size effects, and thermodynamic stability to ensure generated
+structures are both novel and synthesizable. This enables efficient
+discovery of new crystals for applications ranging from semiconductors
+to energy storage materials.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 180px;" alt="Relational Dynamic Memory Networks" src="figs/generated-crystals.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">The examples of DFT-verified
+stable structures (E<sub>hull</sub> = 0 eV/atom)</span>.</big></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><br>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Physics-informed_GNNs_for_materials"></a>Physics-informed
+GNNs for materials<br>
+<br>
+</span></big></big><big>This project develops physics-informed graph
+neural networks (PiGNNs) to model materials, incorporating fundamental
+physical laws such as symmetries and conservation directly into the
+neural architecture. Unlike traditional GNNs, physical priors are
+encoded through custom loss functions and specialized message-passing
+operations. This approach aims to improve prediction accuracy for
+properties like formation energy, bandgap, and elastic moduli while
+ensuring physically consistent results, even with limited training data.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 339px;" alt="Embedding material graphs using the electron-ion potentia" src="figs/DIEP.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Embedding material graphs using the electron-ion potential</span>.</big></p><p align="justify"></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><br>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Designing_MOF_for_CO2_capturing"></a>Designing
+MOF for CO2 capturing<br>
+<br>
+</span></big></big>T<big>his project develops Generative AI to
+accelerate the discovery of Metal-Organic Frameworks (MOFs) optimized
+for CO2 capture. By combining deep generative models with
+high-throughput screening, we develop an AI framework that learns the
+complex relationships between MOF structure, chemical composition, and
+CO2 adsorption capabilities. The system generates novel MOF candidates
+by exploring the vast chemical space of metal nodes and organic linkers
+while ensuring synthetic feasibility and stability. Our approach
+incorporates domain knowledge about pore size distributions, surface
+area constraints, and binding site energetics to prioritize structures
+with high CO2 selectivity and working capacity under industrial
+conditions.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 415px;" alt="Embedding material graphs using the electron-ion potentia" src="figs/MOF-examples.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">(a) Example MOF structure (b)(c) Example metal clusters discovered.<br></span></big></p><p align="justify"></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><br>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Modelling_crystals_plasticity"></a>Modelling
+crystals plasticity<br>
+<br>
+</span></big></big><big>This project develops deep neural networks to
+model stress-strain relationships in polycrystalline materials, where
+multiple grain types coexist with distinct crystallographic
+orientations. Our approach captures the complex interplay between
+individual grain deformation mechanisms, grain boundary interactions,
+and overall mechanical response. By incorporating microstructural
+features like grain size distributions, misorientation angles, and
+texture evolution, the model predicts heterogeneous plastic deformation
+across different grain populations. The framework accounts for
+grain-specific slip systems, local strain incompatibilities at
+boundaries, and texture-dependent hardening behaviors to enable
+accurate prediction of polycrystalline materials' mechanical properties
+under various loading conditions.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 163px;" alt="Crystal microstructures" src="figs/crystal-microstructures.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Crystal microstructures</span>.</big></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><br>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Drug-target_affinity_prediction"></a>Drug-protein
+binding
+prediction<br>
+<br>
+</span></big></big><big>This project aims at inventing new
+data-efficient AI models to precisely predict the location and strength
+of binding between drug molecules and target proteins, a critical
+challenge in drug discovery. By developing advanced neural
+architectures that capture both 2D/3D drug conformations and protein
+structures, we model the complex physicochemical interactions at
+binding sites. Our approach integrates multiple learning strategies:
+representation learning for </big><big>2D/</big><big>3D molecular
+structures, attention mechanisms for binding site identification,
+transfer learning from related protein families, and interpretability
+methods to explain predictions. The framework incorporates biophysical
+constraints and leverages limited experimental data to achieve accurate
+binding affinity predictions while providing mechanistic insights into
+drug-protein interactions.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 376px;" alt="Attention values at predicted binding sites of MST1 target" src="figs/MST1-target-binding-sites.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Attention values at predicted
+binding sites of MST1 target</span>.</big></p>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><br>
+<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Exploring_the_phase-space_of_alloys"></a>Deep
+hybrid generative-discriminative model for inverse design</span></big></big></p>
+<p align="justify"><big>This project aims at
+developing general data-driven techniques for&nbsp;</big><big>predicting
+the design parameters for any target in a single step.&nbsp;</big><big>This
+poses two technical challenges: the first caused due to one-to-many
+mapping when learning the inverse problem and the second caused due to
+an user specifying the target specifications only partially. To
+overcome the challenges, we formulate this problem as conditional
+density estimation under high-dimensional setting with incomplete input
+and multimodal output. </big></p>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top;">
+<div style="text-align: center;"><big><img style="width: 250px; height: 145px;" alt="Attention values at predicted binding sites of MST1 target" src="figs/inverse-design.png"></big><br>
+</div>
+<div style="text-align: justify;"><big><span style="font-style: italic;">CVAE-MDN,
+where <span style="font-weight: bold;">x</span>:
+input design, <span style="font-weight: bold;">v</span>:
+specified target component, <span style="font-weight: bold;">h</span>:
+unspecified part, and <span style="font-weight: bold;">z</span>:
+latent variable. </span></big><br>
+<big><span style="font-style: italic;"></span></big><br><big><span style="font-style: italic;">
+Left: </span></big><big><span style="font-style: italic;">Search speed comparison of the
+proposed CVAE-MDN with other search techniques.</span></big></div></td>
+<td style="width: 20px;"></td><td>
+<div style="text-align: center;"><big><img style="width: 400px; height: 299px;" alt="Attention values at predicted binding sites of MST1 target" src="figs/alloy-search.png"></big></div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr style="width: 100%; height: 2px;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big><font style="font-weight: bold;" size="5"><a name="Grants"></a>Grants<br>
+</font></p>
+<ul>
+<li><big>Studying
+and developing advanced machine learning based models for extracting
+chemical/drug-disease relations from biomedical literature”, ($54K), <span style="font-style: italic;">Vietnam NAFOSTED</span>,
+2017–2018.</big></li>
+<li><big>Building a simulator of mail sorting
+machine, ($12K), <span style="font-style: italic;">PTIT VN</span>,
+2003..</big></li>
+</ul>
+<p align="justify"><font size="5"><span style="font-weight: bold;"><a name="TalksTutorials"></a>Talks/Tutorials<br>
+</span></font> </p>
+<ul>
+<li> <a href="https://www.dropbox.com/scl/fi/zot2yv92ry6eh768zlqor/Tran-GenAI-talk-PRCIM11.pdf?rlkey=78vbqfto9lvki1orgaowryuuo&amp;dl=0"><font size="+1"><span style="text-decoration: underline;">Generative
+AI to accelerate discovery of materials</span></font></a><big>,
+Keynote @<span style="font-style: italic;">PRICM11</span>,
+Nov 2023.</big></li>
+<li><a href="https://www.dropbox.com/scl/fi/9amrwhuvinib00dwemfox/AI4matters.pdf?rlkey=4gxykqnm7bci7xkns3zsvo3y6&amp;dl=0"><font size="+1"><span style="text-decoration: underline;">AI
+for automated materials discovery via learning to represent, predict,
+generate and explain</span></font></a><big>, @<span style="font-style: italic;">Thuyloi University</span>,
+May 2023.</big><br>
+</li>
+<li><font size="+1"><a href="http://truyentran.github.io/ecmlpkdd2021-tute.html"><span style="text-decoration: underline;">Machine learning and
+reasoning for drug discovery</span></a></font><big>
+Tutorial @<span style="font-style: italic;">ECML-PKDD</span>,
+Sept 2021.</big></li>
+<li><big><a href="https://truyentran.github.io/talks/AIML-climate-short.pdf">Climate
+change: Challenges and AI-driven solutions</a>, <span style="font-style: italic;">@Swinburne Vietnam</span>,
+Hanoi,&nbsp;
+Vietnam, Dec 2019. <br>
+<a href="https://truyentran.github.io/talks/AI4matters-2019.pdf"><span style="text-decoration: underline;"></span></a></big></li>
+<li><big><a href="https://truyentran.github.io/talks/AI-drug-VietAI-Summit-2019.pdf">Modern
+AI for drug discovery</a>, <span style="font-style: italic;">VietAI
+Summit</span>, Nov 2019.</big></li>
+<li><big>Lecture on <a href="https://truyentran.github.io/talks/seaml19.pdf">Deep
+learning for biomedicine</a>, <span style="font-style: italic;">Southeast
+Asia Machine Learning</span> (SEA ML) School, Depok, Greater
+Jakarta,
+Indonesia, July 2019.</big></li>
+<li><big><a href="https://truyentran.github.io/talks/GM2019-DL4genomics.pdf">Deep
+learning for genomics: Present and future</a>, <span style="font-style: italic;">Genomic Medicine 2019</span>,
+Hanoi,
+Vietnam, June 2019.</big></li>
+<li><big><a href="https://truyentran.github.io/talks/AI4matters-2019.pdf"><span style="text-decoration: underline;">AI for matters</span></a>,
+<span style="font-style: italic;">Phenikaa
+University,</span> Hanoi, Vietnam, Jan 2019.</big></li>
+<li><big><a href="https://truyentran.github.io/talks/BigData-VIN-2019.pdf">Deep
+learning for biomedicine: Genomics and Drug design</a>, <span style="font-style: italic;">Institute of Big Data,</span>
+Hanoi,
+Vietnam, Jan 2019. </big></li>
+<li><big><a href="https://truyentran.github.io/pakdd18-tute.html">Deep
+learning for biomedical discovery and data mining</a>, Tutorial
+at <span style="font-style: italic;">PAKDD'18,</span>
+Melbourne, Australia.</big></li>
+<big> </big>
+</ul>
+<p style="font-weight: bold;" align="justify"><big><font size="+2"><a name="Popular_writing"></a>Popular
+writing</font></big></p>
+<ul>
+<li><big><a href="https://medium.com/@tranthetruyen/the-dynamics-of-knowledge-99536b84092a">The
+dynamics of knowledge</a>, <span style="font-weight: bold;">Truyen
+Tran</span>, <span style="font-style: italic;">Medium</span>,
+October 2024.<span style="text-decoration: underline;"><br>
+</span></big></li>
+<li><big><a href="https://medium.com/@tranthetruyen/ai-math-medicine-software-and-the-sciences-a-shifting-landscape-f32cea698e6f">AI,
+math, medicine, software, and the sciences: A shifting landscape</a>,
+</big><big><span style="font-weight: bold;">Truyen
+Tran</span>, <span style="font-style: italic;">Medium</span>,
+August 2024.&nbsp;<span style="text-decoration: underline;"></span></big></li>
+</ul>
+<p style="font-weight: bold;" align="justify"><big><font size="+2">Preprints</font><span style="text-decoration: underline;"></span></big></p>
+<ul>
+<big> </big>
+</ul>
+<ul>
+<li><big><a href="https://chemrxiv.org/engage/chemrxiv/article-details/671b3df61fb27ce1248c35ff">Scale
+matters: simulation of nanoscopic dendrite initiation in the lithium
+solid electrolyte interphase using a machine learning potentia</a>l,&nbsp;</big><big>Tawfik,
+Sherif Abdulkader, Linh La, Tri Nguyen, <span style="font-weight: bold;">Truyen Tran</span>, Sunil
+Gupta, and Svetha Venkatesh, <span style="font-style: italic;">ChemRxiv.</span>
+2024; doi:10.26434/chemrxiv-2024-86s6m.</big></li>
+<li><big><a href="http://arxiv.org/abs/1811.06060">Hybrid
+generative-discriminative models for inverse materials design</a>,
+Phuoc Nguyen, <span style="font-weight: bold;">Truyen Tran</span>,&nbsp;Sunil
+Gupta, Svetha Venkatesh. <span style="font-style: italic;">arXiv
+preprint</span> 2019 arXiv:1811.06060.</big></li>
+<li><big><a href="https://www.arxiv.org/abs/2411.04323">Efficient
+symmetry-aware materials generation via hierarchical generative flow
+networks</a>, Tri Minh Nguyen, Sherif Abdulkader Tawfik, <span style="font-weight: bold;">Truyen Tran</span>, Sunil
+Gupta, Santu Rana, Svetha Venkatesh, arXiv preprint,
+https://doi.org/10.48550/arXiv.2411.04323.<br>
+</big></li>
+</ul>
+<p align="justify"><font style="font-weight: bold;" size="5">Publications</font><font size="5"><a name="Publications"></a></font></p>
+<p align="justify"><span style="font-weight: bold;"><font size="5"><span style="color: rgb(0, 153, 0);"><a name="AI_Scientists_pubs"></a>AI
+Scientists</span></font></span><br>
+</p>
+<ul>
+<li><big><a href="https://arxiv.org/abs/2411.06781"><span style="text-decoration: underline;">MP-PINN: A Multi-Phase
+Physics-Informed Neural Network for epidemic forecasting</span></a>,
+Thang Nguyen, Dung Nguyen, Kha Pham and <span style="font-weight: bold;">Truyen Tran</span>, in <span style="font-style: italic;">Proceedings of the 22nd
+Australasian Data Science and Machine Learning Conference (AusDM'24)</span>,
+Melbourne, Australia | 25-27 November 2024.</big></li>
+<li><big><a href="https://openreview.net/forum?id=dJuDv4MKLE">Hierarchical
+GFlowNet for crystal structure generation</a>, </big><big>Nguyen,
+Tri, Sherif Tawfik, <span style="font-weight: bold;">Truyen
+Tran</span>, Sunil Gupta, Santu Rana, and Svetha Venkatesh. In <span style="font-style: italic;">AI for Accelerated Materials
+Design-NeurIPS 2023 Workshop</span>. 2023.</big></li>
+<li><big><a href="https://link.springer.com/article/10.1007/s41060-022-00371-8">Learning
+to discover medicines</a>, Nguyen, Minh-Tri, Thin Nguyen, and <span style="font-weight: bold;">Truyen Tran</span>. <span style="font-style: italic;">International Journal of Data
+Science and Analytics</span> (2022): 1-16.</big></li>
+<li><big><a href="https://ieeexplore.ieee.org/abstract/document/9827583/">Explaining
+black box drug target prediction through model agnostic counterfactual
+samples</a>, Nguyen, Tri Minh, Thomas P. Quinn, Thin Nguyen, and <span style="font-weight: bold;">Truyen Tran</span>. <span style="font-style: italic;">IEEE/ACM Transactions on
+Computational Biology and Bioinformatics</span> (2022).</big></li>
+<li><big><a href="https://link.springer.com/chapter/10.1007/978-3-030-86520-7_7"><span style="text-decoration: underline;">Variational
+hyper-encoding networks</span></a>, P Nguyen, <span style="font-weight: bold;">T Tran</span>, S Gupta, S
+Rana, HC Dam, S Venkatesh, <span style="font-style: italic;">ECML-PKDD'21</span>,
+2021.</big></li>
+<li><big><a href="https://arxiv.org/abs/1708.04357"><span style="text-decoration: underline;">Graph classification via
+deep learning with virtual nodes</span></a> Trang Pham, <span style="text-decoration: underline;"></span><span style="font-weight: bold;">Truyen Tran</span>, Hoa
+Dam, Svetha
+Venkatesh, <span style="font-style: italic;">Third
+Representation
+Learning for Graphs Workshop (ReLiG 2017)</span>.</big></li>
+<li><big><a href="https://arxiv.org/abs/1703.01454"><span style="text-decoration: underline;">Learning Recurrent
+Matrix
+Representation</span></a>, Kien Do, <span style="font-weight: bold;">Truyen
+Tran</span>, Svetha
+Venkatesh.<span style="font-style: italic;"> </span><span style="font-style: italic;">Third Representation Learning
+for Graphs
+Workshop (ReLiG 2017)</span>.</big></li>
+</ul>
+<p align="justify"><span style="font-weight: bold;"><font size="5"><span style="color: rgb(0, 153, 0);"><a name="Physical_Sciences_pubs"></a>Physical
+Sciences</span></font></span></p>
+<ul>
+</ul>
+<ul>
+<li><big><a href="https://arxiv.org/abs/2402.10931">Embedding material
+graphs using the electron-ion potential: Application to material
+fracture</a>, </big><big>Tawfik, Sherif Abdulkader,
+Tri Minh Nguyen, Salvy P. Russo, <span style="font-weight: bold;">Truyen
+Tran</span>, Sunil Gupta, and Svetha Venkatesh.&nbsp;<span style="font-style: italic;">
+Digital Discovery, Oct 2024</span>.</big></li>
+<li><big><a href="https://www.nature.com/articles/s41524-023-01163-9">Towards
+understanding structure–property relations in materials with
+interpretable deep learning</a>,&nbsp; Tien-Sinh Vu,
+Minh-Quyet Ha, Duong Nguyen Nguyen, Viet-Cuong Nguyen, Yukihiro Abe, <span style="font-weight: bold;">Truyen Tran</span>, Huan
+Tran, Hiori Kino, Takashi Miyake, Koji Tsuda, </big><big>Hieu-Chi
+Dam, </big><big> <span style="font-style: italic;">npj
+Computational Materials, 9(215), (2023)</span>.</big></li>
+<li><big><a href="https://openreview.net/forum?id=dJuDv4MKLE">Hierarchical
+GFlowNet for crystal structure generation</a>, </big><big>Nguyen,
+Tri, Sherif Tawfik, <span style="font-weight: bold;">Truyen
+Tran</span>, Sunil Gupta, Santu Rana, and Svetha Venkatesh. In <span style="font-style: italic;">AI for Accelerated Materials
+Design-NeurIPS 2023 Workshop</span>. 2023.</big></li>
+<li><big><a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.2c03926">Machine
+learning-aided exploration of ultrahard materials,</a> Tawfik,
+Sherif Abdulkader, Phuoc Nguyen, <span style="font-weight: bold;">Truyen
+Tran</span>, Tiffany R. Walsh, and Svetha Venkatesh. <span style="font-style: italic;">The Journal of Physical Chemistry</span>
+C 126, no. 37 (2022): 15952-15961.</big></li>
+<big> </big><big> </big> <li><big><a href="https://truyentran.github.io/papers/incomplete-alloy.pdf"><span style="text-decoration: underline;">Incomplete conditional
+density estimation for fast materials discovery</span></a>,
+Phuoc Nguyen, <span style="font-weight: bold;">Truyen Tran</span>,&nbsp;Sunil
+Gupta, Svetha Venkatesh. <span style="font-style: italic;"></span><span style="font-style: italic;">SDM'19</span>.</big></li>
+<li><big><a href="https://arxiv.org/abs/1807.10751"><span style="text-decoration: underline;">Committee machine that
+votes for similarity between material</span>s</a>;
+Duong-Nguyen Nguyen, Tien-Lam Pham, Viet-Cuong Nguyen, Tuan-Dung Ho, <span style="font-weight: bold;">Truyen Tran</span>, Keisuke
+Takahashi and Hieu-Chi Dam.&nbsp;<span style="font-style: italic;"></span><span style="font-style: italic;">IUCrJ</span>, 2018 Nov 1;
+5(Pt 6): 830–840.</big></li>
+<li><big><a href="https://arxiv.org/abs/1812.09441">Graph transformation
+policy network for chemical reaction prediction</a>, Kien Do, <span style="font-weight: bold;">Truyen Tran</span>, Svetha
+Venkatesh, <span style="font-style: italic;">KDD'19</span>.</big></li>
+<li><big><a href="https://arxiv.org/abs/1801.02622">Graph memory
+networks for molecular activity prediction</a>,&nbsp;Trang
+Pham, <span style="font-weight: bold;">Truyen Tran</span>,
+Svetha Venkatesh, <span style="font-style: italic;">ICPR'18</span>.</big></li>
+<li><big><a href="https://truyentran.github.io/papers/main-CCI.pdf">Neural
+reasoning for chemical-chemical interaction</a>.&nbsp;Trang
+Pham, <span style="font-weight: bold;">Truyen Tran</span>,
+Svetha Venkatesh, <span style="font-style: italic;">NIPS
+2018 Workshop on Machine Learning for Molecules and Materials</span>.</big></li>
+</ul>
+<span style="font-weight: bold;"><font size="5"><span style="color: rgb(0, 153, 0);"><a name="Life_Sciences_pubs"></a>Life Sciences</span></font></span><br>
+<span style="font-weight: bold;"><font size="5"><span style="color: rgb(0, 153, 0);"></span></font></span>
+<ul>
+<li><big><a href="https://link.springer.com/article/10.1007/s41060-022-00371-8">Learning
+to discover medicines</a>, Nguyen, Minh-Tri, Thin Nguyen, and <span style="font-weight: bold;">Truyen Tran</span>. <span style="font-style: italic;">International Journal of Data
+Science and Analytics</span> (2022): 1-16.</big></li>
+<li><big><a href="https://academic.oup.com/bib/article-abstract/23/4/bbac269/6628784">Mitigating
+cold-start problems in drug-target affinity prediction with interaction
+knowledge transferring</a>, Nguyen, Tri Minh, Thin Nguyen, and <span style="font-weight: bold;">Truyen Tran</span>. <span style="font-style: italic;">Briefings in Bioinformatics</span>
+23, no. 4 (2022): bbac269.</big></li>
+<li><big><a href="https://ieeexplore.ieee.org/abstract/document/9827583/">Explaining
+black box drug target prediction through model agnostic counterfactual
+samples</a>, Nguyen, Tri Minh, Thomas P. Quinn, Thin Nguyen, and <span style="font-weight: bold;">Truyen Tran</span>. <span style="font-style: italic;">IEEE/ACM Transactions on
+Computational Biology and Bioinformatics</span> (2022).</big></li>
+<li><big><a href="https://www.biorxiv.org/content/10.1101/534628v2.abstract">Personalized
+Annotation-based Networks (PAN) for the prediction of breast cancer
+relapse</a>, T Nguyen, SC Lee, TP Quinn, B Truong, X Li, <span style="font-weight: bold;">T Tran</span>, S Venkatesh,
+TD Le, <span style="font-style: italic;">IEEE/ACM
+Transactions on Computational Biology and Bioinformatics,</span>
+2021.</big></li>
+<li><big><a href="https://www.biorxiv.org/content/10.1101/686394v1.abstract">Deep
+in the bowel: Highly interpretable neural encoder-decoder networks
+predict gut metabolites from gut microbiome</a>, <span style="font-style: italic;"></span>V Le, TP Quinn, <span style="font-weight: bold;">T Tran</span>, S Venkatesh,
+<span style="font-style: italic;">BMC Genomics
+(21)</span>, 07/2020.</big></li>
+<li><big><a href="https://www.biorxiv.org/content/10.1101/533406v2.abstract">DeepTRIAGE:
+Interpretable and individualised biomarker scores using attention
+mechanism for the classification of breast cancer sub-types</a>.
+A
+Beykikhoshk, TP Quinn, SC Lee, <span style="font-weight: bold;">T
+Tran</span>,
+S Venkatesh, <span style="font-style: italic;">BMC
+Medical Genomics</span><span style="font-style: italic;"></span>,
+2020.</big></li>
+<li><big><a href="https://arxiv.org/abs/1804.00293">Attentional
+multilabel
+learning over graphs: A message passing approach</a>, K Do, <span style="font-weight: bold;">T Tran</span>, T Nguyen, S
+Venkatesh, <span style="font-style: italic;">Machine
+Learning, 2019.</span></big></li>
+<li><big><a href="https://arxiv.org/abs/2009.12146">GEFA: Early fusion
+approach in drug-target affinity prediction</a>, Tri Minh Nguyen,
+Thin Nguyen, Thao Minh Le, <span style="font-weight: bold;">Truyen
+Tran</span>,&nbsp;<span style="font-style: italic;"></span></big><big><span style="font-style: italic;">IEEE/ACM Transactions on
+Computational Biology and Bioinformatics, 2021</span></big><big><span style="font-style: italic;">.</span></big></li>
+<li><big><a href="https://arxiv.org/abs/1804.00293">Attentional
+multilabel learning over graphs: A message passing approach</a>,
+K Do, <span style="font-weight: bold;">T Tran</span>,
+T Nguyen, S Venkatesh, <span style="font-style: italic;">Machine
+Learning</span>, 2019.</big></li>
+</ul>
+&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+<br style="">
+<p style="" align="justify"><br>
+&nbsp;</p>
+</body></html>
