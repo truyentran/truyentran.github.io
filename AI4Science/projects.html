@@ -15,7 +15,7 @@ font-size: 12px;
 <table style="border-collapse: collapse; width: 1000px; height: 530px;" id="1" border="0" bordercolor="#111111" cellpadding="3" cellspacing="0">
 <tbody>
 <tr>
-<td rowspan="7" v="" style="border-width: 1px; border-right: 1px solid; vertical-align: top; background-color: rgb(241, 242, 241);">
+<td rowspan="6" v="" style="border-width: 1px; border-right: 1px solid; vertical-align: top; background-color: rgb(241, 242, 241);">
 <p align="right"><img style="border: 2px solid ; width: 200px; height: 178px;" alt="transparent ML" src="figs/Hydrogen_Density_Plots.png" hspace="0"><br>
 (Source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hydrogen_Density_Plots.png/1200px-Hydrogen_Density_Plots.png">wikipedia.com</a>)</p>
 <p align="right">
@@ -51,29 +51,25 @@ font-size: 12px;
 <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
-<td style="width: 50%; vertical-align: top;"><big><span style="font-weight: bold;"></span></big><big>&nbsp;»
-<span style="text-decoration: underline;"><a href="#Multi-target_molecular_property">Multi-target
-molecular property prediction</a><br>
-</span></big><big><span style="font-weight: bold;"></span></big><big>&nbsp;»
-<span style="text-decoration: underline;"><a href="#Prediction_of_chemical-chemical">Prediction of
-chemical-chemical interaction</a><br>
-</span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="#Chemical_reaction_interaction">Chemical reaction
+<td style="width: 50%; vertical-align: top;"><big><span style="font-weight: bold;"></span></big><big>&nbsp;</big><big>» <a href="projects.html#Crystal_structure_generation"><span style="text-decoration: underline;">Goal-driven crystal
+structure
+generation</span></a><br></big><big>&nbsp;</big><big>» <span style="text-decoration: underline;"><a href="projects.html#Designing_MOF_for_CO2_capturing">Designing MOF for
+CO2
+capturing</a><br>
+</span></big><big>&nbsp;</big><big>» <span style="text-decoration: underline;"><a href="#Chemical_reaction_interaction">Chemical reaction
 prediction</a><br>
+</span></big><big>&nbsp;</big><big>»
+<span style="text-decoration: underline;"><a href="projects.html#Prediction_of_chemical-chemical">Prediction of
+chemical-chemical interaction</a><br>
 </span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="https://theoryinformed-ml.github.io/">Theory-informed
 machine
 learning</a><br>
 </span></big><big>&nbsp;» <span style="text-decoration: underline;"><a href="#Foundation_Models_for_science">Foundation Models for
-science</a><br>
-</span></big><big>&nbsp;» <a href="#Crystal_structure_generation"><span style="text-decoration: underline;">Goal-driven crystal
-structure
-generation</span></a></big><br>
+science</a></span></big><big><a href="#Crystal_structure_generation"><span style="text-decoration: underline;"></span></a></big><br>
 </td>
 <td style="vertical-align: top;"><big><span style="text-decoration: underline;"></span></big><big><span style="font-weight: bold;"></span></big><big>»
 <span style="text-decoration: underline;"><a href="#Physics-informed_GNNs_for_materials">Physics-informed
 GNNs for materials</a><br>
-</span></big><big>» <span style="text-decoration: underline;"><a href="#Designing_MOF_for_CO2_capturing">Designing MOF for
-CO2
-capturing</a><br>
 </span></big><big>» <span style="text-decoration: underline;"><a href="https://genai4materials.github.io/">Generative AI
 for
 materials discovery</a><br>
@@ -82,7 +78,7 @@ plasticity</a><br>
 </span></big><big>» <span style="text-decoration: underline;"><a href="#Drug-target_affinity_prediction">Drug-protein binding
 prediction</a><br>
 </span></big><big>» <a href="#Exploring_the_phase-space_of_alloys"><span style="text-decoration: underline;">Deep
-hybrid&nbsp;model for inverse design</span></a></big><br>
+hybrid&nbsp;model for inverse design</span></a><br></big><big>» <a href="#Multi-target_molecular_property"><span style="text-decoration: underline;"></span></a></big><big><a href="#Multi-target_molecular_property">Multi-target molecular property prediction</a><br><br></big>
 </td>
 </tr>
 </tbody>
@@ -94,13 +90,7 @@ hybrid&nbsp;model for inverse design</span></a></big><br>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td></td>
-<td><big style="font-weight: bold;"><big><span style="color: rgb(0, 102, 0);"></span></big></big>
-<ul>
-</ul>
-<hr style="height: 1px; width: 100%;" noshade="noshade"></td>
-</tr>
+
 <tr>
 <td width="24">
 <p></p>
@@ -108,25 +98,62 @@ hybrid&nbsp;model for inverse design</span></a></big><br>
 <p></p>
 </td>
 <td style="width: 837px; vertical-align: top;">
-<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Multi-target_molecular_property"></a>
-Multi-target molecular property prediction</span></big></big></p>
-<p align="justify"><big>Molecules have multiple properties of interest,
-and often all of them must be satisfactory for practical use in
-applications like drug discovery and materials design. This project
-develops new scalable and explainable techniques based on Graph Neural
-Networks to predict hundreds of properties simultaneously, leveraging
-the strong correlations between them. By encoding molecular structures
-as graphs and utilizing advanced attention mechanisms, our models
-capture complex structure-property relationships across diverse
-chemical spaces. The framework achieves state-of-the-art accuracy while
-providing interpretable insights into property predictions. Notably,
-the models are capable of zero-shot learning, enabling prediction of
-new properties using only their textual descriptions, thus reducing the
-need for extensive experimental data.</big></p>
-<p style="text-align: center;"><big><img style="width: 600px; height: 388px;" alt="Attention visualization on substructures of a molecule with PubChem SID of 491286." src="figs/PubChem-SID-491286.png"></big></p>
-<p style="text-align: center;"><big><span style="font-style: italic;">Substructures of a molecule
-corresponding to 8 prediction targets (PubChem SID: 491286)</span></big></p>
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Crystal_structure_generation"></a>Goal-driven
+crystal
+structure generation<br>
+</span></big></big><big><br>
+</big><big>Designing crystals is difficult as it requires&nbsp;deep
+knowledge of materials science and exploration of a massive
+combinatorial space. This project develops AI-driven methods for rapid
+exploration of the crystal space towards targeted properties while
+satisfying domain-specific constraints. Our approach combines
+generative models with physics-informed neural networks to navigate the
+vast space of possible crystal structures, considering atomic
+composition, symmetry groups, and lattice parameters. The framework
+incorporates materials science principles like electronegativity rules,
+size effects, and thermodynamic stability to ensure generated
+structures are both novel and synthesizable. This enables efficient
+discovery of new crystals for applications ranging from semiconductors
+to energy storage materials.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 180px;" alt="Relational Dynamic Memory Networks" src="figs/generated-crystals.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">The examples of DFT-verified
+stable structures (E<sub>hull</sub> = 0 eV/atom)</span>.</big></p>
 <hr style="width: 100%; height: 2px;">
+<br><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Designing_MOF_for_CO2_capturing"></a>Designing
+MOF for CO2 capturing<br>
+<br>
+</span></big></big>T<big>his project develops Generative AI to
+accelerate the discovery of Metal-Organic Frameworks (MOFs) optimized
+for CO2 capture. By combining deep generative models with
+high-throughput screening, we develop an AI framework that learns the
+complex relationships between MOF structure, chemical composition, and
+CO2 adsorption capabilities. The system generates novel MOF candidates
+by exploring the vast chemical space of metal nodes and organic linkers
+while ensuring synthetic feasibility and stability. Our approach
+incorporates domain knowledge about pore size distributions, surface
+area constraints, and binding site energetics to prioritize structures
+with high CO2 selectivity and working capacity under industrial
+conditions.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 415px;" alt="Embedding material graphs using the electron-ion potentia" src="figs/MOF-examples.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">(a) Example MOF structure (b)(c) Example metal clusters discovered.<br></span></big></p><br><hr style="width: 100%; height: 2px;">
+<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Chemical_reaction_interaction"></a>Chemical
+reaction prediction</span></big></big></p>
+<p align="justify"><big>Predicting chemical reactions is central to
+chemistry, impacting fields from drug synthesis to materials
+processing. In this project we reframe the reaction prediction problem
+as graph morphism, where a collection of reactants and catalysts form a
+supra-graph with temporarily disjoint sub-graphs. Reactions are viewed
+as a sequential decision problem, where each bond change is an action
+in the reaction pathway. Using reinforcement learning and graph neural
+networks, our model learns to predict likely reaction mechanisms by
+sequentially modifying molecular bonds, considering aspects such as
+electronic effects, steric hindrance, and thermodynamic feasibility.
+This approach enables prediction of complex reaction pathways, yields,
+and side products while providing mechanistic insights into chemical
+transformations.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 190px;" alt="Relational Dynamic Memory Networks" src="figs/reaction.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Reaction represented as a set of
+graph transformations from reactants (leftmost) to<br>
+products (rightmost)</span>.</big></p><p style="text-align: center;"><br></p><hr style="width: 100%; height: 2px;">
 <p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Prediction_of_chemical-chemical"></a>Prediction
 of chemical-chemical interaction</span></big></big></p>
 <p align="justify"><big>Chemicals are rarely used in isolation but are
@@ -149,26 +176,6 @@ queries about the molecular system. The underlying model is Relational
 Dynamic Memory Networks</span>.</big></p>
 <p align="justify"></p>
 <hr style="width: 100%; height: 2px;">
-<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Chemical_reaction_interaction"></a>Chemical
-reaction prediction</span></big></big></p>
-<p align="justify"><big>Predicting chemical reactions is central to
-chemistry, impacting fields from drug synthesis to materials
-processing. In this project we reframe the reaction prediction problem
-as graph morphism, where a collection of reactants and catalysts form a
-supra-graph with temporarily disjoint sub-graphs. Reactions are viewed
-as a sequential decision problem, where each bond change is an action
-in the reaction pathway. Using reinforcement learning and graph neural
-networks, our model learns to predict likely reaction mechanisms by
-sequentially modifying molecular bonds, considering aspects such as
-electronic effects, steric hindrance, and thermodynamic feasibility.
-This approach enables prediction of complex reaction pathways, yields,
-and side products while providing mechanistic insights into chemical
-transformations.</big></p>
-<p style="text-align: center;"><big><img style="width: 600px; height: 190px;" alt="Relational Dynamic Memory Networks" src="figs/reaction.png"></big></p>
-<p style="text-align: center;"><big><span style="font-style: italic;">Reaction represented as a set of
-graph transformations from reactants (leftmost) to<br>
-products (rightmost)</span>.</big></p>
-<hr style="width: 100%; height: 2px;">
 <p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><br>
 <a name="Foundation_Models_for_science"></a>Foundation
 Models for science</span></big></big></p>
@@ -182,30 +189,7 @@ to be retrieved later in the form of Foundation Models (FMs). Thi
 research program aims at leveraging recent advances in Large Language
 Models (LLMs) to build scientific FMs, which will later be used by AI
 Scientist agents in scientific workflows.<br><br><span style="font-style: italic;">Left: DALL·E 3 illustration of Foundation Models</span>, <span style="font-style: italic;">compressing all scientific knowledge into its parameters</span>.</big></td><td style="width: 20px;">&nbsp; &nbsp; &nbsp;</td><td style="text-align: right;"><img style="width: 300px; height: 300px;" alt="Foundation Models for science" src="figs/FoundationModels-Dall-E.png"></td></tr></tbody></table><p align="justify"><big></big></p>
-<hr style="width: 100%; height: 2px;">
-<p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><br>
-<a name="Crystal_structure_generation"></a>Goal-driven
-crystal
-structure generation<br>
-</span></big></big><big><br>
-</big><big>Designing crystals is difficult as it requires&nbsp;deep
-knowledge of materials science and exploration of a massive
-combinatorial space. This project develops AI-driven methods for rapid
-exploration of the crystal space towards targeted properties while
-satisfying domain-specific constraints. Our approach combines
-generative models with physics-informed neural networks to navigate the
-vast space of possible crystal structures, considering atomic
-composition, symmetry groups, and lattice parameters. The framework
-incorporates materials science principles like electronegativity rules,
-size effects, and thermodynamic stability to ensure generated
-structures are both novel and synthesizable. This enables efficient
-discovery of new crystals for applications ranging from semiconductors
-to energy storage materials.</big></p>
-<p style="text-align: center;"><big><img style="width: 600px; height: 180px;" alt="Relational Dynamic Memory Networks" src="figs/generated-crystals.png"></big></p>
-<p style="text-align: center;"><big><span style="font-style: italic;">The examples of DFT-verified
-stable structures (E<sub>hull</sub> = 0 eV/atom)</span>.</big></p>
-<hr style="width: 100%; height: 2px;">
-<p align="justify"><br>
+<hr style="width: 100%; height: 2px;"><br><p align="justify"><br>
 <big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Physics-informed_GNNs_for_materials"></a>Physics-informed
 GNNs for materials<br>
 <br>
@@ -218,26 +202,7 @@ operations. This approach aims to improve prediction accuracy for
 properties like formation energy, bandgap, and elastic moduli while
 ensuring physically consistent results, even with limited training data.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 339px;" alt="Embedding material graphs using the electron-ion potentia" src="figs/DIEP.png"></big></p>
 <p style="text-align: center;"><big><span style="font-style: italic;">Embedding material graphs using the electron-ion potential</span>.</big></p><p align="justify"></p>
-<hr style="width: 100%; height: 2px;">
-<p align="justify"><br>
-<big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Designing_MOF_for_CO2_capturing"></a>Designing
-MOF for CO2 capturing<br>
-<br>
-</span></big></big>T<big>his project develops Generative AI to
-accelerate the discovery of Metal-Organic Frameworks (MOFs) optimized
-for CO2 capture. By combining deep generative models with
-high-throughput screening, we develop an AI framework that learns the
-complex relationships between MOF structure, chemical composition, and
-CO2 adsorption capabilities. The system generates novel MOF candidates
-by exploring the vast chemical space of metal nodes and organic linkers
-while ensuring synthetic feasibility and stability. Our approach
-incorporates domain knowledge about pore size distributions, surface
-area constraints, and binding site energetics to prioritize structures
-with high CO2 selectivity and working capacity under industrial
-conditions.</big></p><p style="text-align: center;"><big><img style="width: 600px; height: 415px;" alt="Embedding material graphs using the electron-ion potentia" src="figs/MOF-examples.png"></big></p>
-<p style="text-align: center;"><big><span style="font-style: italic;">(a) Example MOF structure (b)(c) Example metal clusters discovered.<br></span></big></p><p align="justify"></p>
-<hr style="width: 100%; height: 2px;">
-<p align="justify"><br>
+<hr style="width: 100%; height: 2px;"><br><p align="justify"><br>
 <big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Modelling_crystals_plasticity"></a>Modelling
 crystals plasticity<br>
 <br>
@@ -311,7 +276,25 @@ proposed CVAE-MDN with other search techniques.</span></big></div></td>
 </td>
 </tr>
 </tbody>
-</table><br>&nbsp;&nbsp;
+</table><br>&nbsp;&nbsp;<p align="justify"></p>
+<hr style="width: 100%; height: 2px;"><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"></span></big></big></p><p align="justify"><big><big><span style="font-weight: bold; color: rgb(102, 0, 0);"><a name="Multi-target_molecular_property"></a>
+Multi-target molecular property prediction</span></big></big></p>
+<p align="justify"><big>Molecules have multiple properties of interest,
+and often all of them must be satisfactory for practical use in
+applications like drug discovery and materials design. This project
+develops new scalable and explainable techniques based on Graph Neural
+Networks to predict hundreds of properties simultaneously, leveraging
+the strong correlations between them. By encoding molecular structures
+as graphs and utilizing advanced attention mechanisms, our models
+capture complex structure-property relationships across diverse
+chemical spaces. The framework achieves state-of-the-art accuracy while
+providing interpretable insights into property predictions. Notably,
+the models are capable of zero-shot learning, enabling prediction of
+new properties using only their textual descriptions, thus reducing the
+need for extensive experimental data.</big></p>
+<p style="text-align: center;"><big><img style="width: 600px; height: 388px;" alt="Attention visualization on substructures of a molecule with PubChem SID of 491286." src="figs/PubChem-SID-491286.png"></big></p>
+<p style="text-align: center;"><big><span style="font-style: italic;">Substructures of a molecule
+corresponding to 8 prediction targets (PubChem SID: 491286)</span></big></p><p style="text-align: center;"><big><span style="font-style: italic;">&nbsp;</span></big></p>
 </td>
 </tr>
 </tbody>
