@@ -197,6 +197,10 @@ h1 {
   margin-top: 1rem;
 }
 
+.hero-copy h1 {
+  font-size: clamp(2.3rem, 4.6vw, 4rem);
+}
+
 .hero-copy p {
   font-size: 1.08rem;
   color: var(--text-soft);
@@ -266,14 +270,57 @@ h1 {
   padding: 2rem;
   display: grid;
   gap: 1rem;
+  position: relative;
   background:
     linear-gradient(180deg, rgba(15, 93, 102, 0.08), rgba(255, 255, 255, 0.78)),
     var(--surface);
 }
 
+.portrait-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 300px) 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  margin: 0;
+  padding: 1.15rem;
+  border-radius: calc(var(--radius) - 6px);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(237, 244, 245, 0.9));
+  border: 1px solid rgba(15, 93, 102, 0.16);
+  box-shadow: 0 18px 38px rgba(15, 35, 39, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-portrait {
+  width: 100%;
+  aspect-ratio: 0.9;
+  object-fit: cover;
+  border-radius: 26px;
+  border: 1px solid rgba(15, 93, 102, 0.16);
+  box-shadow: 0 16px 28px rgba(15, 35, 39, 0.14);
+}
+
+.portrait-card figcaption {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text-soft);
+  font-size: 1.02rem;
+}
+
+.portrait-card strong {
+  color: var(--text);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.8rem;
+  letter-spacing: -0.03em;
+}
+
 .systems-map {
   position: relative;
-  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
   padding: 1.5rem;
   border-radius: calc(var(--radius) - 6px);
   background:
@@ -293,12 +340,10 @@ h1 {
 }
 
 .systems-core {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  transform: translate(-50%, -50%);
-  width: min(38vw, 240px);
-  aspect-ratio: 1;
-  border-radius: 50%;
+  position: relative;
+  grid-column: 1 / -1;
+  min-height: 180px;
+  border-radius: 30px;
   background: linear-gradient(160deg, var(--accent), #184248);
   color: #fff;
   display: grid;
@@ -306,21 +351,23 @@ h1 {
   text-align: center;
   padding: 1.4rem;
   box-shadow: 0 22px 48px rgba(15, 93, 102, 0.22);
+  z-index: 1;
 }
 
 .systems-core strong {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .system-node {
-  position: absolute;
-  width: min(28vw, 180px);
+  position: relative;
+  width: auto;
   padding: 1rem;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(15, 93, 102, 0.12);
   box-shadow: 0 12px 30px rgba(15, 35, 39, 0.08);
+  z-index: 1;
 }
 
 .systems-map p,
@@ -338,26 +385,6 @@ h1 {
 .system-node strong {
   display: block;
   margin-bottom: 0.3rem;
-}
-
-.node-intelligence {
-  top: 5%;
-  left: 4%;
-}
-
-.node-science {
-  top: 10%;
-  right: 4%;
-}
-
-.node-health {
-  bottom: 8%;
-  left: 8%;
-}
-
-.node-society {
-  bottom: 12%;
-  right: 8%;
 }
 
 section {
@@ -734,6 +761,14 @@ section {
   .systems-map::before {
     display: none;
   }
+
+  .portrait-card {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .systems-map {
+    padding-top: 1.5rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -821,5 +856,10 @@ section {
   .hero-meta {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .portrait-card {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
