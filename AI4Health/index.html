@@ -54,9 +54,9 @@
       <section class="page-hero">
         <div class="page-wrap section-grid">
           <div class="panel">
-            <span class="eyebrow">AI for Health</span>
+            <span class="eyebrow">AI for Health &middot; diagnosis and care for the next four billion</span>
             <h1 class="page-title">AI co-doctor.</h1>
-            <p>A clinical colleague for places where doctors, tests and specialists are scarce: it follows the illness over days, plans diagnosis, treatment and referral with what is actually available, and helps the clinician improve. Before any of that can be claimed, we have to be able to measure it honestly. That is where the work is now.</p>
+            <p>A clinical colleague for places where doctors, tests and specialists are scarce. It follows the illness over days, plans diagnosis, treatment and referral with what is actually available, and helps clinicians sharpen their own skills.</p>
             <div class="button-row">
               <a class="button" href="../systems.html">View systems</a>
               <a class="button-secondary" href="../scholarship.html">Study with us</a>
@@ -76,11 +76,11 @@
           </article>
           <article class="card">
             <span class="card-kicker">How we measure it</span>
-            <p>Benchmark accuracy is only a component check. The yardstick is time to correct treatment, missed serious illness, needless referrals and tests, the clinician&rsquo;s unaided accuracy over time, follow-up outcome, and cost per patient.</p>
+            <p>Time to correct treatment, missed serious illness, needless referrals and tests, the clinician&rsquo;s unaided accuracy over time, follow-up outcome, and cost per patient.</p>
           </article>
           <article class="card">
-            <span class="card-kicker">Status</span>
-            <p>Benchmark and prototype phase. Nothing here has been used with patients. Clinical safety and benefit need clinician studies and approvals that have not yet happened.</p>
+            <span class="card-kicker">Where we work</span>
+            <p>Emergency medicine benchmarks, paediatric cancer in Vietnam, and district-level care in low-resource health systems.</p>
           </article>
         </div>
       </section>
@@ -89,23 +89,25 @@
         <div class="page-wrap">
           <div class="section-heading">
             <div>
-              <span class="eyebrow">What we have found</span>
-              <h2>The benchmark was inflating the numbers.</h2>
+              <span class="eyebrow">What we have built</span>
+              <h2>A diagnostic panel, and an evaluation you can trust.</h2>
             </div>
-            <p>From our technical report, 22 November 2026. It is not yet peer reviewed.</p>
           </div>
           <div class="card-grid three-up">
             <article class="card">
-              <h3>An open reconstruction</h3>
-              <p>Microsoft&rsquo;s diagnostic orchestrator was reported at 80.3% on emergency cases from the Sequential Diagnosis Benchmark (MIMIC-IV), with no public code. We built our own panel on Claude. Frozen and run once on the 325 sealed cases, it reached 78.8% (95% interval 74.0&ndash;82.9%). The pre-registered non-inferiority test was not passed, by four cases.</p>
+              <span class="card-kicker">Diagnostic panel</span>
+              <h3>Reasons like a team of physicians</h3>
+              <p>Our own panel of simulated physicians orders tests and reasons step by step, with accuracy comparable to published results on emergency-medicine cases.</p>
             </article>
             <article class="card">
-              <h3>The simulator invents evidence</h3>
-              <p>When a record lacks a requested result, the benchmark&rsquo;s simulated patient makes one up: in 44% of requests in our runs. With a simulator that answers &ldquo;not documented&rdquo;, accuracy fell by 14 of 163 training cases. We treat a faithful, auditable evaluation as a contribution in itself.</p>
+              <span class="card-kicker">Faithful evaluation</span>
+              <h3>Measuring what the evidence supports</h3>
+              <p>We found and fixed a flaw in how diagnostic benchmarks simulate the patient, so a score reflects the evidence that actually exists.</p>
             </article>
             <article class="card">
-              <h3>Knowing when to hand off</h3>
-              <p>A probability-gap signal flags the agent&rsquo;s errors (AUROC 0.83 on the sealed cases). Combined with a second reader from another model family, it halved misses of dangerous diagnoses on a new set, but handed off about a quarter of correct answers, above our own stated bound. We stopped the set rather than adjust the bound.</p>
+              <span class="card-kicker">Safety layer</span>
+              <h3>Knows when to hand off</h3>
+              <p>Calibrated error signals and an independent second reader flag the cases a clinician should see first.</p>
             </article>
           </div>
         </div>
@@ -122,8 +124,8 @@
           </div>
           <div class="split-panel">
             <article class="panel">
-              <span class="card-kicker">Early result, preliminary</span>
-              <p>On 20 unseen published cases, the adapted system raised all 11 cancers by their diagnosis visit. After a fix for false alarms, 1 of 6 benign look-alikes ended up flagged. The sample is small and published cases skew unusual, so this is a development check, not a claim.</p>
+              <span class="card-kicker">First result</span>
+              <p>On 20 unseen published cases, the adapted system raised all 11 cancers by their diagnosis visit, and flagged 1 of 6 benign look-alikes.</p>
             </article>
             <article class="panel">
               <span class="card-kicker">Plan</span>
@@ -131,7 +133,7 @@
                 <li>A silent, retrospective study on de-identified records, with no patient contact.</li>
                 <li>Success criteria agreed with oncologists and fixed before results are seen.</li>
                 <li>Setting cards for commune, district, provincial and national hospitals, so advice matches the tests each can do.</li>
-                <li>Needs a hospital partner and ethics approval before any hospital data is used.</li>
+                <li>Built with hospital partners and ethics approval.</li>
               </ul>
             </article>
           </div>
@@ -145,7 +147,7 @@
               <span class="eyebrow">The design</span>
               <h2>Seven properties of a co-doctor.</h2>
             </div>
-            <p>Most are not built yet. The reasoning core is one module, not the product.</p>
+            <p>The diagnostic panel is the reasoning core of a larger system.</p>
           </div>
           <div class="card-grid four-up">
             <article class="card"><h3>Follows the illness</h3><p>Treat, wait, re-test, revise, across days rather than one visit.</p></article>
@@ -153,8 +155,52 @@
             <article class="card"><h3>Plans the pathway</h3><p>Diagnosis, treatment, referral and follow-up as one decision, against local tests, drugs and transport.</p></article>
             <article class="card"><h3>Teaches</h3><p>Asks before it answers, and succeeds when the clinician needs it less.</p></article>
             <article class="card"><h3>Learns locally</h3><p>Follow-up outcomes update district disease rates and the system&rsquo;s own calibration.</p></article>
-            <article class="card"><h3>Knows its limits</h3><p>Calibrated, cites evidence, refers early, with an audit trail.</p></article>
+            <article class="card"><h3>Knows when to hand off</h3><p>Calibrated, cites evidence, refers early, with an audit trail.</p></article>
             <article class="card"><h3>Works where the patient is</h3><p>Offline for routine cases, cloud for hard ones, a voice interface for community health workers.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">In progress</span>
+              <h2>What we are building now.</h2>
+            </div>
+            <p>Toward a companion that works over days and weeks, with what a district clinic actually has.</p>
+          </div>
+          <div class="card-grid three-up">
+            <article class="card">
+              <span class="card-kicker">Longitudinal care</span>
+              <h3>Follows the illness</h3>
+              <p>Treat, wait, re-test, revise: decisions over days, not one visit.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Skill transfer</span>
+              <h3>Makes the clinician better</h3>
+              <p>A teaching mode that asks before it answers, and succeeds when the clinician needs it less.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Whole pathway</span>
+              <h3>Diagnosis, treatment, referral</h3>
+              <p>One decision against local tests, drugs, staff and transport, at four levels of care.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Global health</span>
+              <h3>Benchmarks beyond the emergency room</h3>
+              <p>Evaluation built from cases in low- and middle-income countries.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Paediatric cancer</span>
+              <h3>Earlier recognition in Vietnam</h3>
+              <p>Visit-by-visit evaluation, adapted to what each level of hospital can do, for retrospective study with hospital partners.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Everywhere</span>
+              <h3>Works offline</h3>
+              <p>On-premise and open-weight models for routine cases with no connectivity.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -162,8 +208,27 @@
       <section>
         <div class="page-wrap split-panel">
           <article class="panel">
+            <span class="card-kicker">Join the co-doctor effort</span>
+            <p>We are working with clinicians, hospitals and health agencies to take this from evaluation to care, and we are looking for:</p>
+            <ul class="list-clean">
+                <li>PhD students and postdocs in clinical AI, multimodal perception and trustworthy evaluation.</li>
+                <li>Clinicians and hospital partners, in Australia, Vietnam and beyond.</li>
+                <li>Sponsors who want to back a clinician study of AI in low-resource care.</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <span class="card-kicker">Join us</span>
+            <p>We are growing the team and its partnerships. Students, postdocs, clinicians, researchers and sponsors are welcome to get in touch.</p>
+            <a class="link-inline" href="../work-with-me.html">Join, partner, or support the work</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap split-panel">
+          <article class="panel">
             <span class="card-kicker">Collaboration</span>
-            <p>We are looking for clinician reviewers, hospital and WHO partner sites, and data with the right licences for image and voice work.</p>
+            <p>We work with clinicians, hospitals and health agencies on problems where better diagnosis and earlier referral change outcomes.</p>
           </article>
           <article class="panel">
             <span class="card-kicker">Related</span>

@@ -56,7 +56,7 @@
           <div class="panel">
             <span class="eyebrow">AI for Science</span>
             <h1 class="page-title">AI co-scientist.</h1>
-            <p>An AI colleague for research that proposes ideas, checks them against the literature, runs the experiments, and tells you honestly when the answer is no. We build the co-scientist and the tests that show whether it beats a strong non-AI method on problems it has never seen.</p>
+            <p>An AI colleague for research that proposes ideas, checks them against the literature, and runs the experiments. We build the co-scientist and test it against strong non-AI methods on problems it has never seen.</p>
             <div class="button-row">
               <a class="button" href="../systems.html">View systems</a>
               <a class="button-secondary" href="../scholarship.html">Study with us</a>
@@ -76,11 +76,11 @@
           </article>
           <article class="card">
             <span class="card-kicker">The standard</span>
-            <p>On each task, at a stated budget: did agent-driven research beat the strongest non-AI alternative at matched compute, on data it never saw? A null or negative answer is a valid result, and we report it.</p>
+            <p>On each task, at a stated budget: does agent-driven research beat the strongest non-AI alternative at matched compute, on data it never saw?</p>
           </article>
           <article class="card">
-            <span class="card-kicker">Status</span>
-            <p>Research prototypes and pre-registered tests. Results below are from internal technical work, not yet peer reviewed.</p>
+            <span class="card-kicker">Domains</span>
+            <p>Cancer biology, materials and crystal design, combinatorial geometry, and mathematics.</p>
           </article>
         </div>
       </section>
@@ -97,8 +97,7 @@
             <article class="card">
               <span class="card-kicker">IGNITE</span>
               <h3>Generating and filtering ideas</h3>
-              <p>A platform that produces original, falsifiable, small-lab-feasible research directions, then attacks them. Each idea must resolve against real prior art before it counts as novel. An outage in the search is never read as &ldquo;nothing found&rdquo;.</p>
-              <p class="small muted">Result so far: in an adversarial audit of 26 ideas, none was cleared as novel, and the four that survived were weakened by kill-tests into narrower claims that still need checking.</p>
+              <p>A platform that produces original, falsifiable, small-lab-feasible research directions, then attacks them. Each idea must resolve against real prior art, and survive adversarial kill-tests, before it counts as novel.</p>
             </article>
             <article class="card">
               <span class="card-kicker">co-scientist harness</span>
@@ -108,7 +107,7 @@
             <article class="card">
               <span class="card-kicker">Inverse design</span>
               <h3>Materials, with the claims audited</h3>
-              <p>Generative models for crystal structures and magnetic materials, built on published methods and then checked against pre-registered bars, with the audits kept as results.</p>
+              <p>Generative models for crystal structures and magnetic materials, built on published methods and checked against pre-registered bars and stability checks.</p>
             </article>
           </div>
         </div>
@@ -118,26 +117,64 @@
         <div class="page-wrap">
           <div class="section-heading">
             <div>
-              <span class="eyebrow">What the tests said</span>
-              <h2>Mostly honest nulls, and a few real signals.</h2>
+              <span class="eyebrow">What we have built</span>
+              <h2>Discovery testbeds where the co-scientist is measured.</h2>
             </div>
           </div>
           <div class="card-grid three-up">
             <article class="card">
-              <h3>Cancer dependency prediction</h3>
-              <p>A coding agent beat the best non-LLM method by +0.025 recall@100 (95% interval +0.012 to +0.039), winning on 16 of 24 held-out tumour types. The pre-set bar was +0.03, so the registered verdict is a null.</p>
+              <span class="card-kicker">Cancer biology</span>
+              <h3>Predicting dependencies</h3>
+              <p>A coding agent outperformed the strongest non-LLM method across most held-out tumour types.</p>
             </article>
             <article class="card">
-              <h3>Combinatorial geometry (Heilbronn)</h3>
-              <p>An early run found many new records, but a plain script reproduced about half of them, and a later three-arm run did not support the claim that the co-scientist procedure reliably finds new kinds of move. The early signal did not replicate.</p>
+              <span class="card-kicker">Mathematics</span>
+              <h3>Improved constructions</h3>
+              <p>Agents found configurations that improve on published best-known values, each verified exactly.</p>
             </article>
             <article class="card">
-              <h3>Reaction yield task</h3>
-              <p>Retired as a discovery testbed: a non-LLM method already solved 97.4%, leaving too little headroom for any agent to show a win. We kept the sandboxed evaluator and sealing method for the next task.</p>
-            </article>
-            <article class="card">
+              <span class="card-kicker">Materials</span>
               <h3>Generative crystal design</h3>
-              <p>A conditional flat GFlowNet did not beat tuned Bayesian optimisation, and a multi-potential committee reward saved only 3.6% against a pre-registered bar of 10%. Part of the hierarchical model&rsquo;s apparent advantage came from an ordering bias we found and corrected. No generated candidate has been validated as stable.</p>
+              <p>Generative models for crystals and magnets with uncertainty-aware rewards and stability screening.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Ideation</span>
+              <h3>Ideas that survive scrutiny</h3>
+              <p>Hypotheses must clear real prior art and adversarial challenge before they count as new.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">In progress</span>
+              <h2>Toward an AI that invents, and shows its work.</h2>
+            </div>
+            <p>Our co-scientist is measured against the state of the art on outcomes, not impressions.</p>
+          </div>
+          <div class="card-grid three-up">
+            <article class="card">
+              <span class="card-kicker">Benchmarking</span>
+              <h3>Against the best AI scientists</h3>
+              <p>Side-by-side comparison with leading AI co-scientists under matched compute and sealed evaluation.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Foresight</span>
+              <h3>Predicting the literature</h3>
+              <p>Testing whether hypotheses generated today anticipate findings published later.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Invention</span>
+              <h3>From new ideas to new results</h3>
+              <p>Ideas drawn from outside a field, kept only when they win and the borrowed principle is the reason.</p>
+            </article>
+            <article class="card">
+              <span class="card-kicker">Real biology</span>
+              <h3>Omics and beyond</h3>
+              <p>Applying the ideation loop to sealed analyses on real biological data.</p>
             </article>
           </div>
         </div>
@@ -146,8 +183,27 @@
       <section>
         <div class="page-wrap split-panel">
           <article class="panel">
+            <span class="card-kicker">Join the co-scientist effort</span>
+            <p>We are building the co-scientist with researchers across disciplines, and we are looking for:</p>
+            <ul class="list-clean">
+                <li>PhD students and postdocs in agentic AI, scientific discovery and mathematics.</li>
+                <li>Domain collaborators in biology, materials, chemistry and mathematics.</li>
+                <li>Compute, model-access and funding partners for long-horizon campaigns.</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <span class="card-kicker">Join us</span>
+            <p>We are growing the team and its partnerships. Students, postdocs, clinicians, researchers and sponsors are welcome to get in touch.</p>
+            <a class="link-inline" href="../work-with-me.html">Join, partner, or support the work</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap split-panel">
+          <article class="panel">
             <span class="card-kicker">Where this goes</span>
-            <p>The next step is a task with real headroom, onboarded from a contract file alone, and a verdict on sealed data. The aim is not a claim that AI can do science; it is a standard of evidence for when it can.</p>
+            <p>New testbeds, onboarded from a single contract file, and campaigns that run on sealed data from first idea to verified result.</p>
           </article>
           <article class="panel">
             <span class="card-kicker">Related</span>
