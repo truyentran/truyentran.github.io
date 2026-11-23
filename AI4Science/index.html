@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI for Science | Truyen Tran</title>
-  <meta name="description" content="AI for Science builds scientific copilots and discovery systems for materials, molecules, experiments, and scientific workflows.">
+  <title>AI Co-Scientist | Truyen Tran</title>
+  <meta name="description" content="AI co-scientist: systems that ground themselves in literature and data, propose hypotheses, write analysis code, and plan experiments.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -22,15 +22,11 @@
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>Menu</button>
           <div class="header-nav" id="site-navigation" data-menu-panel>
             <nav class="main-nav" aria-label="Primary">
-              <a href="../index.html">Home</a>
-              <a href="../research.html" aria-current="page">Research Platforms</a>
-              <a href="../systems.html">Systems / Build</a>
-              <a href="../impact.html">Impact</a>
+              <a href="../research.html" aria-current="page">Research</a>
+              <a href="../systems.html">Systems</a>
               <a href="../writing.html">Writing</a>
-              <a href="../talks.html">Talks</a>
-              <a href="../people.html">People</a>
-              <a href="../work-with-me.html">Work With Me</a>
-              <a href="../truyen_fullcv_CS.pdf">CV</a>
+              <a href="../work-with-me.html">Join</a>
+              <a href="../people.html">About</a>
             </nav>
             <nav class="utility-nav" aria-label="External links">
               <a href="https://scholar.google.com.au/citations?hl=en&amp;user=zvspVLwAAAAJ">Scholar</a>
@@ -44,16 +40,26 @@
       </header>
     </div>
 
+
+
+
+    <div class="context-bar">
+      <div class="page-wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep" aria-hidden="true">/</span><a href="../research.html">Research</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">AI co-scientist</span></nav>
+        <nav class="subnav" aria-label="In this section"><a href="../research.html">Overview</a><a href="../AIFuture/index.html">Civilisational AI</a><a href="../AI4Health/index.html">AI co-doctor</a><a href="../AI4Science/index.html" aria-current="page">AI co-scientist</a></nav>
+      </div>
+    </div>
+
     <main>
       <section class="page-hero">
         <div class="page-wrap section-grid">
           <div class="panel">
             <span class="eyebrow">AI for Science</span>
-            <h1 class="page-title">Scientific copilots for automated discovery.</h1>
-            <p>This program develops systems that can work scientifically: ground themselves in literature and data, generate hypotheses, write analysis code, design experiments, explore large spaces, and communicate findings with experts in the loop.</p>
+            <h1 class="page-title">AI co-scientist.</h1>
+            <p>An AI colleague for research that proposes ideas, checks them against the literature, runs the experiments, and tells you honestly when the answer is no. We build the co-scientist and the tests that show whether it beats a strong non-AI method on problems it has never seen.</p>
             <div class="button-row">
-              <a class="button" href="../systems.html">View Systems</a>
-              <a class="button-secondary" href="projects.html">Project Archive</a>
+              <a class="button" href="../systems.html">View systems</a>
+              <a class="button-secondary" href="../scholarship.html">Study with us</a>
             </div>
           </div>
           <div class="panel visual-card">
@@ -65,16 +71,16 @@
       <section>
         <div class="page-wrap card-grid three-up">
           <article class="card">
-            <span class="card-kicker">Mission</span>
-            <p>Accelerate discovery and bring scientific structure into AI systems across materials, molecules, experiments, and end-to-end scientific workflows.</p>
+            <span class="card-kicker">The aim</span>
+            <p>Systems that ground themselves in literature and data, generate hypotheses, write analysis code, plan experiments, and communicate findings, with experts in the loop.</p>
           </article>
           <article class="card">
-            <span class="card-kicker">Current themes</span>
-            <p>Scientific copilots, inverse design, reaction prediction, molecular design, and research workflows where validation and iteration cost dominate.</p>
+            <span class="card-kicker">The standard</span>
+            <p>On each task, at a stated budget: did agent-driven research beat the strongest non-AI alternative at matched compute, on data it never saw? A null or negative answer is a valid result, and we report it.</p>
           </article>
           <article class="card">
-            <span class="card-kicker">Opportunities</span>
-            <p>Open to collaborations with researchers in chemistry, materials, biology, computational science, and scientific infrastructure.</p>
+            <span class="card-kicker">Status</span>
+            <p>Research prototypes and pre-registered tests. Results below are from internal technical work, not yet peer reviewed.</p>
           </article>
         </div>
       </section>
@@ -83,22 +89,55 @@
         <div class="page-wrap">
           <div class="section-heading">
             <div>
-              <span class="eyebrow">Program Areas</span>
-              <h2>From scientific workflows to physical and life sciences.</h2>
+              <span class="eyebrow">Three strands</span>
+              <h2>Ideas, tests, and a domain to prove it on.</h2>
             </div>
           </div>
           <div class="card-grid three-up">
             <article class="card">
-              <h3>Scientific copilots</h3>
-              <p>Autonomous and human-guided systems for grounding, analysis code generation, experiment selection, evaluation, and explanation.</p>
+              <span class="card-kicker">IGNITE</span>
+              <h3>Generating and filtering ideas</h3>
+              <p>A platform that produces original, falsifiable, small-lab-feasible research directions, then attacks them. Each idea must resolve against real prior art before it counts as novel. An outage in the search is never read as &ldquo;nothing found&rdquo;.</p>
+              <p class="small muted">Result so far: in an adversarial audit of 26 ideas, none was cleared as novel, and the four that survived were weakened by kill-tests into narrower claims that still need checking.</p>
             </article>
             <article class="card">
-              <h3>Physical sciences</h3>
-              <p>AI for materials, alloys, molecules, and expensive design spaces where simulation, synthesis, and validation are costly.</p>
+              <span class="card-kicker">co-scientist harness</span>
+              <h3>Do agents beat search?</h3>
+              <p>Runs coding agents on a contracted computational task under evaluation the agent cannot touch, against non-LLM search at matched compute, on sealed data scored once. Every number in a report can be re-derived from stored artefacts.</p>
             </article>
             <article class="card">
-              <h3>Life sciences</h3>
-              <p>Drug discovery, biological reasoning, and systems that support scientific work in complex biological domains.</p>
+              <span class="card-kicker">Inverse design</span>
+              <h3>Materials, with the claims audited</h3>
+              <p>Generative models for crystal structures and magnetic materials, built on published methods and then checked against pre-registered bars, with the audits kept as results.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">What the tests said</span>
+              <h2>Mostly honest nulls, and a few real signals.</h2>
+            </div>
+          </div>
+          <div class="card-grid three-up">
+            <article class="card">
+              <h3>Cancer dependency prediction</h3>
+              <p>A coding agent beat the best non-LLM method by +0.025 recall@100 (95% interval +0.012 to +0.039), winning on 16 of 24 held-out tumour types. The pre-set bar was +0.03, so the registered verdict is a null.</p>
+            </article>
+            <article class="card">
+              <h3>Combinatorial geometry (Heilbronn)</h3>
+              <p>An early run found many new records, but a plain script reproduced about half of them, and a later three-arm run did not support the claim that the co-scientist procedure reliably finds new kinds of move. The early signal did not replicate.</p>
+            </article>
+            <article class="card">
+              <h3>Reaction yield task</h3>
+              <p>Retired as a discovery testbed: a non-LLM method already solved 97.4%, leaving too little headroom for any agent to show a win. We kept the sandboxed evaluator and sealing method for the next task.</p>
+            </article>
+            <article class="card">
+              <h3>Generative crystal design</h3>
+              <p>A conditional flat GFlowNet did not beat tuned Bayesian optimisation, and a multi-potential committee reward saved only 3.6% against a pre-registered bar of 10%. Part of the hierarchical model&rsquo;s apparent advantage came from an ordering bias we found and corrected. No generated candidate has been validated as stable.</p>
             </article>
           </div>
         </div>
@@ -107,22 +146,15 @@
       <section>
         <div class="page-wrap split-panel">
           <article class="panel">
-            <span class="card-kicker">Selected talks</span>
-            <ul class="list-clean">
-              <li>AI for scientific discovery: A new frontier, 2025</li>
-              <li>AI4Science: The 5th paradigm, Los Alamos, 2025</li>
-              <li>AI4Science, VNU Hanoi and TDTU, 2025</li>
-              <li>Generative AI to accelerate discovery of materials, PRICM11, 2023</li>
-            </ul>
-            <a class="link-inline" href="../talks.html">More talks</a>
+            <span class="card-kicker">Where this goes</span>
+            <p>The next step is a task with real headroom, onboarded from a contract file alone, and a verdict on sealed data. The aim is not a claim that AI can do science; it is a standard of evidence for when it can.</p>
           </article>
           <article class="panel">
-            <span class="card-kicker">More from this platform</span>
+            <span class="card-kicker">Related</span>
             <ul class="list-clean">
-              <li><a href="projects.html">Projects and collaborations</a></li>
-              <li><a href="../ecmlpkdd2021-tute.html">Drug discovery tutorial</a></li>
-              <li><a href="QML.html">Quantum and scientific notes</a></li>
-              <li><a href="readQML.html">Reading material</a></li>
+              <li><a href="../systems.html">Systems we build</a></li>
+              <li><a href="../scholarship.html">PhD scholarships</a></li>
+              <li><a href="../work-with-me.html">Collaborate</a></li>
             </ul>
           </article>
         </div>
@@ -136,9 +168,14 @@
         </div>
         <div>
           <div class="footer-links">
-            <a href="../research.html">Research Platforms</a>
-            <a href="../systems.html">Systems / Build</a>
-            <a href="../work-with-me.html">Work With Me</a>
+            <a href="../research.html">Research</a>
+            <a href="../systems.html">Systems</a>
+            <a href="../writing.html">Writing</a>
+            <a href="../scholarship.html">PhD scholarships</a>
+            <a href="../work-with-me.html">Work with me</a>
+            <a href="../people.html">People</a>
+            <a href="../impact.html">Impact</a>
+            <a href="../truyen_fullcv_CS.pdf">CV</a>
           </div>
           <p class="small muted">Copyright <span data-year>2026</span> Truyen Tran.</p>
         </div>

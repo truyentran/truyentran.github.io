@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI for Health | Truyen Tran</title>
-  <meta name="description" content="AI for Health develops clinical AI systems, imaging tools, and longitudinal health models for clinically useful decision support.">
+  <title>AI Co-Doctor | Truyen Tran</title>
+  <meta name="description" content="AI co-doctor: clinical AI that reasons over imaging and longitudinal records, retrieves evidence, and explains, with the clinician in charge.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -22,15 +22,11 @@
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>Menu</button>
           <div class="header-nav" id="site-navigation" data-menu-panel>
             <nav class="main-nav" aria-label="Primary">
-              <a href="../index.html">Home</a>
-              <a href="../research.html" aria-current="page">Research Platforms</a>
-              <a href="../systems.html">Systems / Build</a>
-              <a href="../impact.html">Impact</a>
+              <a href="../research.html" aria-current="page">Research</a>
+              <a href="../systems.html">Systems</a>
               <a href="../writing.html">Writing</a>
-              <a href="../talks.html">Talks</a>
-              <a href="../people.html">People</a>
-              <a href="../work-with-me.html">Work With Me</a>
-              <a href="../truyen_fullcv_CS.pdf">CV</a>
+              <a href="../work-with-me.html">Join</a>
+              <a href="../people.html">About</a>
             </nav>
             <nav class="utility-nav" aria-label="External links">
               <a href="https://scholar.google.com.au/citations?hl=en&amp;user=zvspVLwAAAAJ">Scholar</a>
@@ -44,16 +40,26 @@
       </header>
     </div>
 
+
+
+
+    <div class="context-bar">
+      <div class="page-wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep" aria-hidden="true">/</span><a href="../research.html">Research</a><span class="sep" aria-hidden="true">/</span><span aria-current="page">AI co-doctor</span></nav>
+        <nav class="subnav" aria-label="In this section"><a href="../research.html">Overview</a><a href="../AIFuture/index.html">Civilisational AI</a><a href="../AI4Health/index.html" aria-current="page">AI co-doctor</a><a href="../AI4Science/index.html">AI co-scientist</a></nav>
+      </div>
+    </div>
+
     <main>
       <section class="page-hero">
         <div class="page-wrap section-grid">
           <div class="panel">
             <span class="eyebrow">AI for Health</span>
-            <h1 class="page-title">Clinically useful intelligence for care, monitoring, and longitudinal health.</h1>
-            <p>This program develops clinical AI systems for imaging, longitudinal health, monitoring, public health, and human-centred clinical workflows.</p>
+            <h1 class="page-title">AI co-doctor.</h1>
+            <p>A clinical colleague for places where doctors, tests and specialists are scarce: it follows the illness over days, plans diagnosis, treatment and referral with what is actually available, and helps the clinician improve. Before any of that can be claimed, we have to be able to measure it honestly. That is where the work is now.</p>
             <div class="button-row">
-              <a class="button" href="../systems.html">View Systems</a>
-              <a class="button-secondary" href="projects.html">Project Archive</a>
+              <a class="button" href="../systems.html">View systems</a>
+              <a class="button-secondary" href="../scholarship.html">Study with us</a>
             </div>
           </div>
           <div class="panel visual-card">
@@ -65,16 +71,16 @@
       <section>
         <div class="page-wrap card-grid three-up">
           <article class="card">
-            <span class="card-kicker">Mission</span>
-            <p>Build scalable, aligned AI systems that translate into clinically useful tools and inform policy, care, and health planning.</p>
+            <span class="card-kicker">The aim</span>
+            <p>A companion that, used by district clinicians and community health workers with only local resources, shortens the time to correct treatment, cuts missed serious illness and needless referral, and raises the clinician&rsquo;s own skill. Routine cases should work offline.</p>
           </article>
           <article class="card">
-            <span class="card-kicker">Current themes</span>
-            <p>Clinical AI assistants, imaging, cerebral palsy assessment, mental health, population health, patient trajectories, and longevity-related modelling.</p>
+            <span class="card-kicker">How we measure it</span>
+            <p>Benchmark accuracy is only a component check. The yardstick is time to correct treatment, missed serious illness, needless referrals and tests, the clinician&rsquo;s unaided accuracy over time, follow-up outcome, and cost per patient.</p>
           </article>
           <article class="card">
-            <span class="card-kicker">Opportunities</span>
-            <p>Open to collaboration with clinicians, hospitals, researchers, public health teams, and partners working on high-impact health systems.</p>
+            <span class="card-kicker">Status</span>
+            <p>Benchmark and prototype phase. Nothing here has been used with patients. Clinical safety and benefit need clinician studies and approvals that have not yet happened.</p>
           </article>
         </div>
       </section>
@@ -83,23 +89,72 @@
         <div class="page-wrap">
           <div class="section-heading">
             <div>
-              <span class="eyebrow">Program Areas</span>
-              <h2>Clinical AI, imaging, and longitudinal health understanding.</h2>
+              <span class="eyebrow">What we have found</span>
+              <h2>The benchmark was inflating the numbers.</h2>
             </div>
+            <p>From our technical report, 22 November 2026. It is not yet peer reviewed.</p>
           </div>
           <div class="card-grid three-up">
             <article class="card">
-              <h3>Clinical AI assistants</h3>
-              <p>Systems that observe, retrieve, reason, plan, recommend, and communicate with clinicians and patients in meaningful workflows.</p>
+              <h3>An open reconstruction</h3>
+              <p>Microsoft&rsquo;s diagnostic orchestrator was reported at 80.3% on emergency cases from the Sequential Diagnosis Benchmark (MIMIC-IV), with no public code. We built our own panel on Claude. Frozen and run once on the 325 sealed cases, it reached 78.8% (95% interval 74.0&ndash;82.9%). The pre-registered non-inferiority test was not passed, by four cases.</p>
             </article>
             <article class="card">
-              <h3>Medical image analysis</h3>
-              <p>Computer vision and multimodal systems for diagnosis, monitoring, and assistive clinical interpretation.</p>
+              <h3>The simulator invents evidence</h3>
+              <p>When a record lacks a requested result, the benchmark&rsquo;s simulated patient makes one up: in 44% of requests in our runs. With a simulator that answers &ldquo;not documented&rdquo;, accuracy fell by 14 of 163 training cases. We treat a faithful, auditable evaluation as a contribution in itself.</p>
             </article>
             <article class="card">
-              <h3>Trajectories and public health</h3>
-              <p>Models of patient and population health through time, from mental health to epidemic and care-system forecasting.</p>
+              <h3>Knowing when to hand off</h3>
+              <p>A probability-gap signal flags the agent&rsquo;s errors (AUROC 0.83 on the sealed cases). Combined with a second reader from another model family, it halved misses of dangerous diagnoses on a new set, but handed off about a quarter of correct answers, above our own stated bound. We stopped the set rather than adjust the bound.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Next target</span>
+              <h2>Earlier recognition of childhood cancer in Vietnam.</h2>
+            </div>
+            <p>Late diagnosis is the problem. The question for clinicians: at a child&rsquo;s first visit, would the system have raised cancer, asked for the right next test, and referred, and how much earlier than actually happened?</p>
+          </div>
+          <div class="split-panel">
+            <article class="panel">
+              <span class="card-kicker">Early result, preliminary</span>
+              <p>On 20 unseen published cases, the adapted system raised all 11 cancers by their diagnosis visit. After a fix for false alarms, 1 of 6 benign look-alikes ended up flagged. The sample is small and published cases skew unusual, so this is a development check, not a claim.</p>
+            </article>
+            <article class="panel">
+              <span class="card-kicker">Plan</span>
+              <ul class="list-clean">
+                <li>A silent, retrospective study on de-identified records, with no patient contact.</li>
+                <li>Success criteria agreed with oncologists and fixed before results are seen.</li>
+                <li>Setting cards for commune, district, provincial and national hospitals, so advice matches the tests each can do.</li>
+                <li>Needs a hospital partner and ethics approval before any hospital data is used.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="page-wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">The design</span>
+              <h2>Seven properties of a co-doctor.</h2>
+            </div>
+            <p>Most are not built yet. The reasoning core is one module, not the product.</p>
+          </div>
+          <div class="card-grid four-up">
+            <article class="card"><h3>Follows the illness</h3><p>Treat, wait, re-test, revise, across days rather than one visit.</p></article>
+            <article class="card"><h3>Perceives</h3><p>Listens in local languages; reads rapid-test strips, rashes and printouts from a phone.</p></article>
+            <article class="card"><h3>Plans the pathway</h3><p>Diagnosis, treatment, referral and follow-up as one decision, against local tests, drugs and transport.</p></article>
+            <article class="card"><h3>Teaches</h3><p>Asks before it answers, and succeeds when the clinician needs it less.</p></article>
+            <article class="card"><h3>Learns locally</h3><p>Follow-up outcomes update district disease rates and the system&rsquo;s own calibration.</p></article>
+            <article class="card"><h3>Knows its limits</h3><p>Calibrated, cites evidence, refers early, with an audit trail.</p></article>
+            <article class="card"><h3>Works where the patient is</h3><p>Offline for routine cases, cloud for hard ones, a voice interface for community health workers.</p></article>
           </div>
         </div>
       </section>
@@ -107,22 +162,15 @@
       <section>
         <div class="page-wrap split-panel">
           <article class="panel">
-            <span class="card-kicker">Selected work</span>
-            <ul class="list-clean">
-              <li>Recent advances in AI for biomedicine, 2025</li>
-              <li>Cerebral palsy assessment and video analysis work</li>
-              <li>Mental health treatment optimisation</li>
-              <li>Longitudinal modelling and AI in public health</li>
-            </ul>
-            <a class="link-inline" href="../talks.html">More talks</a>
+            <span class="card-kicker">Collaboration</span>
+            <p>We are looking for clinician reviewers, hospital and WHO partner sites, and data with the right licences for image and voice work.</p>
           </article>
           <article class="panel">
-            <span class="card-kicker">More from this platform</span>
+            <span class="card-kicker">Related</span>
             <ul class="list-clean">
-              <li><a href="projects.html">Projects and collaborators</a></li>
-              <li><a href="covid19.html">Covid-19 response archive</a></li>
-              <li><a href="../pakdd18-tute.html">Biomedical discovery tutorial</a></li>
-              <li><a href="../acml17-tute.html">Deep learning for biomedicine</a></li>
+              <li><a href="../systems.html">Systems we build</a></li>
+              <li><a href="../scholarship.html">PhD scholarships</a></li>
+              <li><a href="../work-with-me.html">Collaborate</a></li>
             </ul>
           </article>
         </div>
@@ -136,9 +184,14 @@
         </div>
         <div>
           <div class="footer-links">
-            <a href="../research.html">Research Platforms</a>
-            <a href="../systems.html">Systems / Build</a>
-            <a href="../work-with-me.html">Work With Me</a>
+            <a href="../research.html">Research</a>
+            <a href="../systems.html">Systems</a>
+            <a href="../writing.html">Writing</a>
+            <a href="../scholarship.html">PhD scholarships</a>
+            <a href="../work-with-me.html">Work with me</a>
+            <a href="../people.html">People</a>
+            <a href="../impact.html">Impact</a>
+            <a href="../truyen_fullcv_CS.pdf">CV</a>
           </div>
           <p class="small muted">Copyright <span data-year>2026</span> Truyen Tran.</p>
         </div>

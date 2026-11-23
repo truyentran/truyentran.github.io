@@ -863,3 +863,140 @@ section {
     text-align: center;
   }
 }
+
+/* ---- Wayfinding: breadcrumb + section sub-nav ---- */
+.context-bar {
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.context-bar .page-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+  padding: 0.55rem 0;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: var(--text-soft);
+}
+
+.breadcrumb a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.breadcrumb .sep {
+  opacity: 0.5;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.subnav a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  color: var(--text-soft);
+  border: 1px solid transparent;
+}
+
+.subnav a:hover {
+  color: var(--accent);
+  border-color: var(--border);
+}
+
+.subnav a[aria-current="page"] {
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  font-weight: 700;
+}
+
+/* ---- Audience paths on the homepage ---- */
+.start-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.start-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.6rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.start-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.start-card p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.start-card ul {
+  margin: 0.2rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.start-card li a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.start-card li a:hover {
+  text-decoration: underline;
+}
+
+.area-card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.area-card:hover h3 {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .start-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .context-bar .page-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
